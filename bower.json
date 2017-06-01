@@ -1,0 +1,21 @@
+{
+  "name": "airon",
+  "homepage": "http://hydrogene.hu/",
+  "authors": [
+    "Gabor Szabo <szabogabor@hydrogene.hu>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "foundation-sites": "^6.3.1",
+    "motion-ui": "^1.2.2"
+  },
+  "overrides": {
+    "motion-ui": {
+      "main": [
+        "dist/motion-ui.js",
+        "src/motion-ui.scss"
+      ]
+    }
+  }
+}

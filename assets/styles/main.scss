@@ -1,0 +1,16 @@
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/foundation-sites/scss/foundation.scss";
+@import "../../bower_components/motion-ui/src/motion-ui.scss";
+// endbower
+
+
+@import "settings";
+@import "mui-settings";
+@include foundation-everything;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+@import "components/wp-classes";
+@import "layouts/tinymce";
