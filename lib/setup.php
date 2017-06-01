@@ -57,18 +57,18 @@ function widgets_init() {
   register_sidebar([
     'name'          => __('Primary', 'airon'),
     'id'            => 'sidebar-primary',
-    'before_widget' => '<section class="widget %1$s %2$s">',
+    'before_widget' => '<section class="widget widget--sidebar column %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
+    'before_title'  => '<h3 class="widget__title">',
     'after_title'   => '</h3>'
   ]);
 
   register_sidebar([
     'name'          => __('Footer', 'airon'),
     'id'            => 'sidebar-footer',
-    'before_widget' => '<section class="widget %1$s %2$s">',
+    'before_widget' => '<section class="widget widget--footer column %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
+    'before_title'  => '<h3 class="widget__title">',
     'after_title'   => '</h3>'
   ]);
 }
@@ -85,7 +85,10 @@ function display_sidebar() {
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
     is_front_page(),
+    is_home(),
+    is_archive(),
     is_page_template('template-custom.php'),
+    is_singular(['page'])
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

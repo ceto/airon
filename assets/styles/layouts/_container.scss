@@ -1,0 +1,9 @@
+.container {
+  @include grid-column-row();
+  float:none !important;
+}
+
+.container--collapse {
+  @include grid-column-row(0);
+  float:none !important;
+}

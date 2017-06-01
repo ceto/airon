@@ -1,0 +1,4 @@
+.navigation {
+  @include grid-column-row();
+  float:none !important;
+}
