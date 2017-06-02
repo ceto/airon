@@ -1,0 +1,26 @@
+.sitefooter {
+ @include grid-row();
+  font-family: $header-font-family;
+  p {
+    margin:0;
+  }
+}
+.sitefooter__top {
+@include grid-column();
+  padding-top:6rem;
+  padding-bottom: 1rem;
+
+  background-color: $dark-gray;
+  color:#fff;
+  //text-align: center;
+  a {
+    color:$alert-color;
+  }
+}
+
+.sitefooter__bottom {
+    @include grid-column();
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    //text-align: center;
+}

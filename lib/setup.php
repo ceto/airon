@@ -88,7 +88,7 @@ function display_sidebar() {
     is_home(),
     is_archive(),
     is_page_template('template-custom.php'),
-    is_singular(['page'])
+    is_singular(['page', 'member', 'service'])
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

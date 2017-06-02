@@ -47,16 +47,16 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1400);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #aa1147,
-  secondary: #767676,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #cc4b37,
+  secondary: #04add5,
+  success: #4fba69,
+  warning: #faa21b,
+  alert: #da2378,
 );
-$light-gray: scale-color(#eeeee2,$lightness:70%);
+$light-gray: #fafaf6;
 $medium-gray: #eeeee2;
 $dark-gray: #333333;
 $black: #0a0a0a;
@@ -97,6 +97,7 @@ $grid-column-count: 12;
 $grid-column-gutter: (
   small: 20px,
   medium: 30px,
+  large: 60px
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -144,7 +145,7 @@ $code-padding: rem-calc(2 5 1);
 $anchor-color: $primary-color;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
-$anchor-text-decoration-hover: none;
+$anchor-text-decoration-hover: underline;
 $hr-width: $global-width;
 $hr-border: 1px solid $medium-gray;
 $hr-margin: rem-calc(20) auto;
