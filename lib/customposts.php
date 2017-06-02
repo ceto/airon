@@ -54,7 +54,8 @@ function airon_custom_post_types() {
   );
   register_post_type( 'service', $args );
 
-  //Classes
+
+  //Members
   $labels = array(
     'name'                  => _x( 'Member', 'Member General Name', 'airon' ),
     'singular_name'         => _x( 'Member', 'Member Singular Name', 'airon' ),
@@ -108,9 +109,14 @@ function airon_custom_post_types() {
 }
 add_action( 'init', 'airon_custom_post_types', 0 );
 
+function airon_remove_date_from_head( $defaults ) {
+    unset($defaults['date']);
+    return $defaults;
+}
+add_filter('manage_service_posts_columns', 'airon_remove_date_from_head');
+add_filter('manage_member_posts_columns', 'airon_remove_date_from_head');
 
 function airon_specialization_tax() {
-
     $labels = array(
         'name'                    => _x( 'Specialization', 'Proffessional Specialization', 'text-domain' ),
         'singular_name'            => _x( 'Specialization', 'Proffessional Specialization', 'text-domain' ),
@@ -132,9 +138,9 @@ function airon_specialization_tax() {
         'labels'            => $labels,
         'public'            => true,
         'show_in_nav_menus' => true,
-        'show_admin_column' => false,
+        'show_admin_column' => true,
         'hierarchical'      => true,
-        'show_tagcloud'     => true,
+        'show_tagcloud'     => false,
         'show_ui'           => true,
         'query_var'         => true,
         'rewrite'           => true,
