@@ -36,7 +36,7 @@ function airon_custom_post_types() {
     'label'                 => __( 'Service', 'airon' ),
     'description'           => __( 'Service Description', 'airon' ),
     'labels'                => $labels,
-    'supports'              => array('title', 'editor', 'thumbnail', 'page-attributes'),
+    'supports'              => array('title', 'editor', 'page-attributes', 'excerpt'),
     'taxonomies'            => array(),
     'hierarchical'          => false,
     'public'                => true,
@@ -152,13 +152,3 @@ function airon_specialization_tax() {
 }
 
 add_action( 'init', 'airon_specialization_tax' );
-
-//remove sticky posts
-function airon_remove_sticky_posts( $query ) {
-    if ( is_home() && $query->is_main_query() ) {
-        //$query->set( 'ignore_sticky_posts', true );
-        $query->set( 'post__not_in' , get_option( 'sticky_posts' ));
-    }
-    return $query;
-}
-add_filter( 'pre_get_posts', 'airon_remove_sticky_posts' );

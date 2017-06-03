@@ -1,5 +1,7 @@
 .sitefooter {
  @include grid-row();
+ font-size:.875rem;
+ text-align: center;
   font-family: $header-font-family;
   p {
     margin:0;

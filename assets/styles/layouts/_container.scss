@@ -7,3 +7,12 @@
   @include grid-column-row(0);
   float:none !important;
 }
+
+.wrapper {
+  max-width: $global-width*0.75;
+  margin:0 auto;
+}
+
+.wrapper--narrow {
+  max-width: $global-width*0.666;
+}
