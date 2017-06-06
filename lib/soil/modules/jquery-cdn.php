@@ -1,6 +1,7 @@
 <?php
 
 namespace Roots\Soil\JqueryCDN;
+namespace Roots\Sage\Assets;
 
 /**
  * Load jQuery from jQuery's CDN with a local fallback
