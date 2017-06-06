@@ -1,18 +1,23 @@
 .container {
-  @include grid-column-row();
-  float:none !important;
+  margin:0 auto;
+  @include breakpoint(xlarge) {
+    width:95%;
+    max-width: $global-width*0.95;
+  }
 }
 
-.container--collapse {
-  @include grid-column-row(0);
-  float:none !important;
-}
 
 .wrapper {
-  max-width: $global-width*0.75;
   margin:0 auto;
+  @include breakpoint(xlarge) {
+    width:80%;
+    max-width: $global-width*0.8;
+  }
 }
 
 .wrapper--narrow {
-  max-width: $global-width*0.666;
+  @include breakpoint(xlarge) {
+    width:60%;
+    max-width: $global-width*0.6;
+  }
 }

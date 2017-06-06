@@ -1,5 +1,4 @@
 .sitefooter {
- @include grid-row();
  font-size:.875rem;
  text-align: center;
   font-family: $header-font-family;
@@ -8,7 +7,8 @@
   }
 }
 .sitefooter__top {
-@include grid-column();
+  @include grid-column-row();
+
   padding-top:6rem;
   padding-bottom: 1rem;
 
@@ -21,8 +21,13 @@
 }
 
 .sitefooter__bottom {
-    @include grid-column();
-    padding-top:1rem;
-    padding-bottom: 1rem;
-    //text-align: center;
+  @include grid-column-row();
+  padding-top:1rem;
+  padding-bottom: 1rem;
+  //text-align: center;
+}
+
+.footerlogo {
+  width: 5rem;
+  margin-bottom:2rem;
 }

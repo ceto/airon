@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="330px" height="314px" viewBox="0 0 330 314" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Airon Star</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logostar" fill-rule="nonzero">
+            <polyline id="Shape" fill="#00ADD3" points="164.7 44.6 164.7 44.6 138.2 109.7 118.6 109.7 164.8 0.5 211.4 109.6 191.3 109.6 164.7 44.6 191.3 109.6"></polyline>
+            <polyline id="Shape" fill="#8754A1" points="287.6 133.4 287.6 133.4 217.5 128.4 211.4 109.7 329.5 119.9 240.2 197.9 234 178.8 287.6 133.4 234 178.8"></polyline>
+            <polyline id="Shape" fill="#D92378" points="241 277.7 241 277.7 224.2 209.5 240 197.9 266.8 313.4 165 252.6 181.3 240.7 241 277.7 181.3 240.7"></polyline>
+            <polyline id="Shape" fill="#F9A11B" points="89.4 277.9 89.4 277.9 149.1 240.8 165 252.4 63.4 313.5 89.8 197.9 106.1 209.7 89.4 277.9 106.1 209.7"></polyline>
+            <polyline id="Shape" fill="#51B969" points="42.3 134 42.3 134 96 179.3 90 198 0.5 120.2 118.6 109.6 112.4 128.8 42.3 134 112.4 128.8"></polyline>
+        </g>
+    </g>
+</svg>

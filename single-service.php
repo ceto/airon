@@ -1,6 +1,6 @@
+<?php get_template_part('templates/service', 'header'); ?>
 <?php while (have_posts()) : the_post(); ?>
-<article <?php post_class(); ?>>
-    <div class="wrapper">
+<article <?php post_class('wrapper ps ps--narrow'); ?>>
         <div class="row">
             <div class="columns tablet-8">
                 <header>
@@ -20,10 +20,9 @@
                 </aside>
             </div>
         </div>
-    </div>
 </article>
-<aside>
-    <div class="row tablet-up-3 ps ps--narow ps--light">
+<aside class="container ps ps--narow ps--light">
+    <div class="row tablet-up-3">
         <div class="column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ratione dolorum fugiat quia voluptatibus recusandae maiores fuga beatae animi autem velit harum, ipsa architecto, nesciunt? Molestiae minus, tempore sapiente earum!</div>
         <div class="column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ratione dolorum fugiat quia voluptatibus recusandae maiores fuga beatae animi autem velit harum, ipsa architecto, nesciunt? Molestiae minus, tempore sapiente earum!</div>
         <div class="column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ratione dolorum fugiat quia voluptatibus recusandae maiores fuga beatae animi autem velit harum, ipsa architecto, nesciunt? Molestiae minus, tempore sapiente earum!</div>

@@ -1,6 +1,6 @@
 <?php get_template_part('templates/page', 'header'); ?>
 <?php if (!have_posts()) : ?>
-<div class="container">
+<div class="wrapper wrapper--narrow ps ps--narrow row column">
     <div class="alert alert-warning">
         <?php _e('Sorry, no results were found.', 'sage'); ?>
     </div>

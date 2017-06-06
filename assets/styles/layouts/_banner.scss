@@ -1,0 +1,26 @@
+.banner {
+  position: relative;
+  > .container {
+    background: $body-background;
+  }
+}
+
+.banner__brand {
+  float:left;
+  margin:1rem 0;
+  display: block;
+  overflow: hidden;
+  width: 8rem;
+  height: 2.125rem;
+  //background-color: red;
+  white-space: nowrap;
+  text-indent: 200%;
+  background-image: url(../images/logoairon.svg);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: auto 100%;
+}
+.banner__nav {
+  float:right;
+   margin:1rem 0;
+}

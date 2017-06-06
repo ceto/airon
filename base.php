@@ -23,7 +23,7 @@ use Roots\Sage\Wrapper;
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
         <?php if (Setup\display_sidebar()) : ?>
-          <aside class="sidebar" role="complementary">
+          <aside class="sidebar container ps ps--light" role="complementary">
             <?php include Wrapper\sidebar_path(); ?>
           </aside><!-- /.sidebar -->
         <?php endif; ?>
