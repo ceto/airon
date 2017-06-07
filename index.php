@@ -7,7 +7,13 @@
     <?php get_search_form(); ?>
 </div>
 <?php endif; ?>
-<?php while (have_posts()) : the_post(); ?>
-<?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
-<?php endwhile; ?>
-<?php the_posts_navigation(); ?>
+<div class="wrapper wrapper--narrow">
+    <div class="row column">
+        <?php while (have_posts()) : the_post(); ?>
+        <div class="ps ps--narrow">
+            <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
+        </div>
+        <?php endwhile; ?>
+    </div>
+    <?php the_posts_navigation(); ?>
+</div>

@@ -16,7 +16,11 @@
 }
 
 .wrapper--narrow {
-  @include breakpoint(xlarge) {
+  // @include breakpoint(tablet) {
+  //   width:80%;
+  //   max-width: $global-width*0.8;
+  // }
+  @include breakpoint(tablet) {
     width:60%;
     max-width: $global-width*0.6;
   }

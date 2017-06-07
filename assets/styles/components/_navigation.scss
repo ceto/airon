@@ -1,4 +1,5 @@
 .navigation {
   @include grid-column-row();
   float:none !important;
+  margin:2rem 0;
 }

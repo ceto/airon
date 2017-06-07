@@ -1,2 +1,5 @@
-<time class="updated" datetime="<?= get_post_time('c', true); ?>"><?= get_the_date(); ?></time>
-<p class="byline author vcard"><?= __('By', 'sage'); ?> <a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn"><?= get_the_author(); ?></a></p>
+<div class="meta">
+<p class="meta__by"><a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn"><?= get_the_author(); ?></a></p>
+<time class="meta__updated" datetime="<?= get_post_time('c', true); ?>"><?= get_the_date(); ?></time>
+<?php // echo get_the_category_list( '|', $parents, $post_id ); ?>
+</div>

@@ -20,3 +20,72 @@
     }
   }
 }
+
+.servicenav {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .wrapper {
+    border-bottom: 1px solid $light-gray;
+
+    @include breakpoint(large) {
+      padding:1rem 12.5%;
+      //width:75.666%;
+      border-bottom: none;
+    }
+
+  }
+}
+.scrollmenu {
+  font-family: $header-font-family;
+  margin:0 auto;
+  padding:0 0;
+  list-style-type: none;
+  white-space: nowrap;
+  //font-weight: $global-weight-bold;
+  line-height: 1;
+  font-size: .875rem;
+  text-transform: capitalize;
+
+  @include breakpoint(large) {
+    white-space: normal;
+    text-align: center;
+  }
+
+  > li {
+    margin:0;
+    padding:0;
+    display:inline-block;
+    > a {
+      color: inherit;
+      display: block;
+      padding: 1.25em rem-calc(map-get($grid-column-gutter,small)/2);
+
+      &:hover {
+        color: $black;
+      }
+      &.active {
+        color:$alert-color;
+      }
+
+      @include breakpoint(medium) {
+        padding: 1.25em rem-calc(map-get($grid-column-gutter,medium)/2);
+      }
+
+      @include breakpoint(large) {
+        padding: .875em rem-calc(map-get($grid-column-gutter,large)/4) .875em rem-calc(map-get($grid-column-gutter,large)/4);
+      }
+
+
+
+    }
+  }
+  // @include breakpoint(large) {
+  //   font-size: 1rem;
+  // }
+
+}

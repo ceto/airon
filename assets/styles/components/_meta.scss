@@ -1,0 +1,25 @@
+.meta {
+  font-size:.75rem;
+  font-family: $header-font-family;
+  a {
+    color:inherit;
+  }
+  @include breakpoint(medium) {
+    font-size: .875rem;
+  }
+  @include breakpoint(xlarge) {
+    font-size: 1rem;
+  }
+}
+.meta__by {
+  margin:0;
+  display: inline-block;
+  font-weight: $global-weight-semibold;
+  &:after {
+    content:' · ';
+  }
+}
+.meta__updated {
+  margin:0;
+  display: inline-block;
+}

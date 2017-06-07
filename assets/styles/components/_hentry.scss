@@ -1,0 +1,29 @@
+.hentry {
+  &.service {
+
+  }
+}
+.hentry__meta {
+  margin-bottom: 0rem;
+}
+.hentry__title {
+  font-size: 1.125rem;
+  margin:0 0 .5em;
+  a {
+    color:inherit;
+  }
+  @include breakpoint(medium) {
+    font-size: 1.25rem;
+  }
+  @include breakpoint(xlarge) {
+    font-size: 1.5rem;
+  }
+}
+
+.hentry__summary {
+  font-size: .875rem;
+
+  @include breakpoint(xlarge) {
+    font-size: 1rem;
+  }
+}
