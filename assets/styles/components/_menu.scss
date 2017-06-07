@@ -1,0 +1,22 @@
+.menu--main {
+  text-transform: uppercase;
+  font-family: $header-font-family;
+  > li {
+    > a {
+      color:inherit;
+      position: relative;
+    }
+  }
+  .active {
+
+    > a {
+        font-weight: $global-weight-bold;
+        &:before {
+            //font-weight: $global-weight-bold;
+            //position: absolute;
+            content:'/ ';
+            //left:.4em;
+        }
+    }
+  }
+}

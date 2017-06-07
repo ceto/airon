@@ -15,11 +15,23 @@
 }
 
 .pagehead__title {
-
+  font-size: 1.5rem;
+  margin:.125em 0 0;
+  @include breakpoint(xlarge) {
+    font-size: 2rem;
+  }
+  a {
+    color:inherit;
+    &:hover,&:focus {
+      text-decoration: none;
+      color:$primary-color;
+    }
+  }
 }
 .pagehead__logo {
-  width:4rem;
-
-
+  width:2rem;
+  @include breakpoint(xlarge) {
+    width: 3rem;
+  }
 }
 
