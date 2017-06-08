@@ -1,6 +1,9 @@
 .menu--main {
   text-transform: uppercase;
   font-family: $header-font-family;
+  float:right;
+  clear:right;
+  margin:0 0 .5rem;
   > li {
     > a {
       color:inherit;
@@ -17,6 +20,36 @@
             content:'/ ';
             //left:.4em;
         }
+    }
+  }
+}
+
+.menu--sec {
+  margin:0 .875rem .5rem;
+  //padding:0 .25rem;
+  //text-transform: capitalize;
+  font-family: $header-font-family;
+  font-size: .875rem;
+  float: right;
+  background-color: $dark-gray;
+  color:$medium-gray;
+
+  font-weight: $global-weight-semibold;
+  border-left: 3rem solid $medium-gray;
+  > li {
+    border-left: 1px solid $medium-gray;
+    > a {
+      color:inherit;
+      position: relative;
+      padding:.5rem .75rem;
+    }
+  }
+  .active {
+
+    > a {
+        // background-color: $medium-gray;
+        // color:$body-font-color;
+        //color:#fff;
     }
   }
 }

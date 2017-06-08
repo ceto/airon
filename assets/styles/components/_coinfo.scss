@@ -1,0 +1,25 @@
+.coinfo {
+  font-size: .75rem;
+  p {
+    margin-bottom: 1em;
+
+  }
+  small {
+    font-size: .875em;
+    font-family: $header-font-family;
+    font-weight: $global-weight-semibold;
+  }
+  @include breakpoint(large){
+    font-size: .875rem;
+  }
+}
+.coinfo__logo {
+  height:4em;
+  margin-bottom: 1em;
+}
+.coinfo__coname {
+  font-size:1.25em;
+  margin:0;
+}
+
+

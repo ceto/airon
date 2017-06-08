@@ -1,12 +1,18 @@
 <header class="banner">
   <div class="container row column">
     <a class="banner__brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-    <nav class="banner__nav">
+    <nav class="banner__nav show-for-large">
+      <?php
+      if (has_nav_menu('secondary_navigation')) :
+        wp_nav_menu(['theme_location' => 'secondary_navigation', 'menu_class' => 'menu menu--sec']);
+      endif;
+      ?>
       <?php
       if (has_nav_menu('primary_navigation')) :
         wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'menu menu--main']);
       endif;
       ?>
     </nav>
+
   </div>
 </header>

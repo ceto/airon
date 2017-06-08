@@ -5,7 +5,13 @@
     max-width: $global-width*0.95;
   }
 }
+.container--hasbg {
+  background-color: $body-background;
+}
 
+.covered {
+  background-color: $body-background;
+}
 
 .wrapper {
   margin:0 auto;

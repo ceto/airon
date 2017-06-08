@@ -4,13 +4,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(../images/blogheader.jpg);
+  //background-attachment: fixed;
   color:$white;
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
   @include breakpoint(xlarge) {
     padding-top: 8rem;
-    margin-top: -4.5rem;
+    margin-top: -5.25rem;
   }
 }
 
