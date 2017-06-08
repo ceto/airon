@@ -12,12 +12,6 @@
       ],
       "main": true
     },
-    "colormods.css": {
-      "files": [
-        "styles/colormods.scss"
-      ],
-      "main": true
-    },
     "customizer.js": {
       "files": [
         "scripts/customizer.js"
