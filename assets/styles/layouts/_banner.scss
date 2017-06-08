@@ -10,15 +10,23 @@
   margin:1.333rem 0 1.5rem;
   display: block;
   overflow: hidden;
-  width: 10rem;
+  width: 8.5rem;
   height: 2.25rem;
   //background-color: red;
-  white-space: nowrap;
-  text-indent: 200%;
-  background-image: url(../images/logoairon.svg);
-  background-repeat: no-repeat;
-  background-position: 0;
-  background-size: auto 100%;
+  // white-space: nowrap;
+  // text-indent: 200%;
+  // background-image: url(../images/logoairon.svg);
+  // background-repeat: no-repeat;
+  // background-position: 0;
+  // background-size: auto 100%;
+  svg {
+    height:inherit;
+    //width: inherit;
+    #firstletter {
+      //fill: $primary-color;
+    }
+
+  }
 }
 
 .banner__nav {

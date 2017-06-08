@@ -14,6 +14,7 @@
 <nav class="servicenav">
   <div class="wrapper">
   <?php
+        $actid=get_the_id();
       $args = array(
         'post_type' => array('service'),
         'order'               => 'ASC',
@@ -29,10 +30,11 @@
       );
 
       $services = new WP_Query( $args );
+
   ?>
   <ul class="scrollmenu">
     <?php while ($services->have_posts()) : $services->the_post(); ?>
-        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+        <li class="<?= $actid===get_the_id()?'active':'' ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
     <?php endwhile; ?>
   </ul>
   </div>

@@ -29,3 +29,20 @@
     </div>
 </aside>
 <?php endwhile; ?>
+<?php
+  $specializations = get_the_terms( $post->ID, 'specialization' );
+  $speci=$specializations[0];
+?>
+<style>
+  .pagehead {
+    background-color: <?= speccolor($speci->term_id) ?>;
+  }
+  .banner__brand svg #firstletter {
+    fill: <?= speccolor($speci->term_id) ?>;
+  }
+  .menu--main .active > a:before,
+  .scrollmenu .active > a  {
+    color: <?= speccolor($speci->term_id) ?>;
+  }
+</style>
+

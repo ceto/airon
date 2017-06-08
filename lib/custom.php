@@ -17,3 +17,7 @@
 
   // 4. Include ACF
   include_once( get_stylesheet_directory() . '/lib/acf/acf.php' );
+
+  function speccolor($spec_id) {
+    return '#'.get_field( 'color', 'specialization_'.$spec_id );
+  }

@@ -1,0 +1,21 @@
+.specicard {
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-attachment: fixed;
+  // background-image: url(../images/homeheader.jpg);
+  // background-blend-mode: multiply;
+
+  background-color: $dark_gray;
+  color:$white;
+  padding:5% 10%;
+  margin-bottom: rem-calc(60);
+  a {
+    color:inherit;
+  }
+}
+
+.specicard__summary {
+  font-size: .875rem;
+  //display: none;
+}

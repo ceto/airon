@@ -8,6 +8,17 @@
     > a {
       color:inherit;
       position: relative;
+      &:before {
+          font-weight: $global-weight-bold;
+          content:'. ';
+          color:transparent;
+      }
+      &:hover, &:focus {
+        text-decoration: none;
+          &:before {
+            color:inherit;
+          }
+      }
     }
   }
   .active {
@@ -15,10 +26,7 @@
     > a {
         font-weight: $global-weight-bold;
         &:before {
-            //font-weight: $global-weight-bold;
-            //position: absolute;
-            content:'/ ';
-            //left:.4em;
+            color:inherit;
         }
     }
   }
@@ -99,7 +107,7 @@
       padding: 1.25em rem-calc(map-get($grid-column-gutter,small)/2);
 
       &:hover {
-        color: $black;
+        //color: $black;
       }
       &.active {
         color:$alert-color;
@@ -115,6 +123,13 @@
 
 
 
+    }
+  }
+  .active {
+
+    > a {
+        //font-weight: $global-weight-semibold;
+        text-shadow:0 0 .125px currentColor;
     }
   }
   // @include breakpoint(large) {

@@ -1,16 +1,17 @@
 .pagehead {
-  background-color: $black;
+  background-color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../images/blogheader.jpg);
+  background-image: url(../images/contactheader.jpg);
   //background-attachment: fixed;
+  background-blend-mode: multiply;
   color:$white;
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
   @include breakpoint(xlarge) {
-    padding-top: 8rem;
+    padding-top: 10rem;
     margin-top: -5.25rem;
   }
 }

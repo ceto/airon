@@ -11,3 +11,14 @@
   <?php endwhile; ?>
     </div>
 </div>
+<style>
+  .pagehead {
+    background-color: <?= speccolor(get_queried_object()->term_id) ?>;
+  }
+  .banner__brand svg #firstletter {
+    fill: <?= speccolor(get_queried_object()->term_id) ?>;
+  }
+  .menu--main .active > a:before {
+    color: <?= speccolor(get_queried_object()->term_id) ?>;
+  }
+</style>
