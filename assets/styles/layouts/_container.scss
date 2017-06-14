@@ -5,6 +5,12 @@
     max-width: $global-width*0.95;
   }
 }
+.container--full {
+  @include breakpoint(xlarge) {
+    width:100%;
+    max-width: $global-width;
+  }
+}
 .container--hasbg {
   background-color: $body-background;
 }
