@@ -1,0 +1,8 @@
+.service__lead {
+  font-size: 1.125rem;
+  font-weight: $global-weight-bold;
+  line-height: $lead-lineheight;
+  @include breakpoint(tablet) {
+      font-size: 1.125rem;
+  }
+}

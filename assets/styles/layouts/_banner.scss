@@ -41,5 +41,5 @@
   transform:translateY(-50%);
 }
 .menutoggler {
-  @include hamburger($body-font-color, $primary-color, 36px, 26px, 5px, 3);
+  @include hamburger($body-font-color, $body-font-color, 36px, 26px, 5px, 3);
 }
