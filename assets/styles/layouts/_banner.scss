@@ -33,3 +33,13 @@
   @include clearfix();
   float:right;
 }
+
+.banner__mobileblock {
+  position: absolute;
+  right: map-get($grid-column-gutter,small);
+  top:50%;
+  transform:translateY(-50%);
+}
+.menutoggler {
+  @include hamburger($body-font-color, $primary-color, 36px, 26px, 5px, 3);
+}

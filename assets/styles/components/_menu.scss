@@ -41,7 +41,6 @@
   float: right;
   background-color: $dark-gray;
   color:$medium-gray;
-
   font-weight: $global-weight-semibold;
   border-left: 3rem solid $medium-gray;
   > li {
@@ -136,4 +135,31 @@
   //   font-size: 1rem;
   // }
 
+}
+
+
+.menu--mobile {
+  font-family: $header-font-family;
+  text-transform: uppercase;
+  font-weight: $global-weight-semibold;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  > li {
+    > a {
+        color:inherit;
+        padding:.666em 0;
+        &:hover, &:focus {
+          text-decoration: none;
+          color:#fff;
+        }
+    }
+  }
+  .active {
+    > a {
+        &:before {
+          content:'. ';
+            color:inherit;
+        }
+    }
+  }
 }

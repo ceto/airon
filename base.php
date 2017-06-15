@@ -7,31 +7,38 @@ use Roots\Sage\Wrapper;
 
 <!doctype html>
 <html <?php language_attributes(); ?>>
-  <?php get_template_part('templates/head'); ?>
-  <body <?php body_class(); ?>>
-    <!--[if IE]>
-      <div class="alert alert-warning">
-        <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
-      </div>
-    <![endif]-->
-    <?php
-      do_action('get_header');
-      get_template_part('templates/header');
-    ?>
-    <div class="document" role="document">
-        <main class="main" role="main">
-          <?php include Wrapper\template_path(); ?>
-        </main><!-- /.main -->
-        <?php if (Setup\display_sidebar()) : ?>
-          <aside class="sidebar container ps ps--light" role="complementary">
-            <?php include Wrapper\sidebar_path(); ?>
-          </aside><!-- /.sidebar -->
-        <?php endif; ?>
-    </div><!-- /.document -->
-    <?php
-      do_action('get_footer');
-      get_template_part('templates/footer');
-      wp_footer();
-    ?>
-  </body>
+    <?php get_template_part('templates/head'); ?>
+    <body <?php body_class(); ?>>
+        <!--[if IE]>
+          <div class="alert alert-warning">
+            <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
+          </div>
+        <![endif]-->
+        <div class="off-canvas-wrapper">
+            <div class="off-canvas-content" data-off-canvas-content>
+                <?php
+                    do_action('get_header');
+                    get_template_part('templates/header');
+                ?>
+                <div class="document" role="document">
+                  <main class="main" role="main">
+                    <?php include Wrapper\template_path(); ?>
+                  </main><!-- /.main -->
+                  <?php if (Setup\display_sidebar()) : ?>
+                    <aside class="sidebar container ps ps--light" role="complementary">
+                      <?php include Wrapper\sidebar_path(); ?>
+                    </aside><!-- /.sidebar -->
+                  <?php endif; ?>
+                </div><!-- /.document -->
+                <?php
+                    do_action('get_footer');
+                    get_template_part('templates/footer');
+                ?>
+            </div>
+            <div class="off-canvas position-left mobilenavcanvas" id="mobilenavcanvas" data-off-canvas data-auto-focus="false">
+                <?php get_template_part('templates/mobilecanvas'); ?>
+            </div>
+        </div>
+        <?php wp_footer(); ?>
+    </body>
 </html>

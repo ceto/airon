@@ -1,7 +1,9 @@
 <footer class="sitefooter <?= is_front_page()?'covered':''; ?>" role="contentinfo">
     <div class="container">
         <div class="sitefooter__top column row">
-            <img class="footerlogo" src="<?= get_stylesheet_directory_uri(); ?>/dist/images/logostar.svg" alt="Airon">
+            <a href="<?= esc_url(home_url('/')); ?>">
+                <img class="footerlogo" src="<?= get_stylesheet_directory_uri(); ?>/dist/images/logostar.svg" alt="Airon">
+            </a>
             <?php
                 $terms = get_terms([
                     'taxonomy' => 'specialization',

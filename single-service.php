@@ -22,11 +22,13 @@
         </div>
 </article>
 <aside class="container ps ps--narow ps--light">
-    <div class="row tablet-up-3">
+  <div class="wrapper">
+    <div class="row tablet-up-2">
         <div class="column"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ratione dolorum fugiat quia voluptatibus recusandae maiores fuga beatae animi autem velit harum, ipsa architecto, nesciunt? Molestiae minus, tempore sapiente earum!</p></div>
         <div class="column"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ratione dolorum fugiat quia voluptatibus recusandae maiores fuga beatae animi autem velit harum, ipsa architecto, nesciunt? Molestiae minus, tempore sapiente earum!</p></div>
         <div class="column"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ratione dolorum fugiat quia voluptatibus recusandae maiores fuga beatae animi autem velit harum, ipsa architecto, nesciunt? Molestiae minus, tempore sapiente earum!</p></div>
     </div>
+  </div>
 </aside>
 <?php endwhile; ?>
 <?php
