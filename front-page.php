@@ -8,6 +8,7 @@ $specs = get_terms([
 <div class="hometopsec">
     <section class="hero container">
         <div class="hero__content">
+            <img class="hero__logo" src="<?= get_stylesheet_directory_uri(); ?>/dist/images/logostar.svg" alt="Airon">
             <h3 class="hero__title">Lorem company ipsum foundation services sit amet in Hungary</h3>
             <p class="hero__lead">Cnsectetur adipisicing elit. Tenetur temporibus nisi optio.</p>
             <div class="hero__actions">
@@ -16,25 +17,23 @@ $specs = get_terms([
         </div>
 
     </section>
-
-    <div class="container homespecs ps ps--narrow">
-        <div class="row tablet-up-2 xlarge-collapse" data-equalizer data-equalize-on="tablet">
+    <div class="container homespecs ">
+        <div class="row tablet-up-2 xlarge-up-4 xlarge-collapse" data-equalizer data-equalize-on="tablet">
             <?php foreach ($specs as $key => $speci) : ?>
             <?php
-            $args = array(
-            'post_type' => array('service'),
-            'order'               => 'ASC',
-            'orderby'             => 'menu_order',
-            'posts_per_page'         => -1,
-            'tax_query' => array(
-            array(
-            'taxonomy'         => 'specialization',
-            'field'            => 'id',
-            'terms'            => $speci->term_id,
-            )
-            ),
-            );
-            $services = new WP_Query( $args );
+                $args = array(
+                    'post_type' => array('service'),
+                    'order'               => 'ASC',
+                    'orderby'             => 'menu_order',
+                    'posts_per_page'         => -1,
+                    'tax_query' => array(
+                    array(
+                        'taxonomy'         => 'specialization',
+                        'field'            => 'id',
+                        'terms'            => $speci->term_id,
+                    )),
+                );
+                $services = new WP_Query( $args );
             ?>
             <div class="column">
                 <div class="specicard" style="background-color: <?= speccolor($speci->term_id) ?>" data-equalizer-watch>
@@ -55,23 +54,33 @@ $specs = get_terms([
 
 <div class="container ps ps--narrow ps--light">
     <div class="row column">
-        <?php the_content(); ?>
-        <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
+        <?php get_template_part('templates/promopost'); ?>
     </div>
 </div>
-<div class="wrapper wrapper--narrow ps ps--narrow">
-    <div class="row column">
-        <?php the_content(); ?>
-        <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
-    </div>
-</div>
-<div class="container ps ps--narrow ps--medium">
-    <div class="wrapper">
-        <div class="row column">
-            <?php the_content(); ?>
-            <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
+<div class="container ps">
+    <div class="row">
+        <div class="columns tablet-10 large-8">
+            <h2><?= __('About Us', 'airon') ?></h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut necessitatibus quasi praesentium corrupti vel veritatis iste enim reiciendis itaque dolorum doloribus sit illo, exercitationem? Amet aut, officiis blanditiis similique quisquam?</p>
+            <p>Umlamet, consectetur adipisicing elit. Sequi similique optio, nihil nemo explicabo officia soluta non modi, culpa cum dolorum ipsum tempora? Totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos assumenda pariatur vero, maiores sequi nulla itaque expedita iste numquam nesciunt nobis. Nam temporibus fuga possimus beatae maxime animi. Suscipit, eum? consequatur sapiente voluptatum saepe laboriosam, beatae?</p>
         </div>
     </div>
 </div>
+<div class="container ps ps--narrow ps--light">
+    <div class="row column">
+        <?php get_template_part('templates/members'); ?>
+    </div>
+</div>
+<div class="container ps ps--narrow ps--medium">
+    <div class="row column">
+        <?php get_template_part('templates/testimonials'); ?>
+    </div>
+</div>
+<div class="container ps ps--narrow">
+    <div class="row column">
+        <?php get_template_part('templates/partners'); ?>
+    </div>
+</div>
+
 
 <?php endwhile; ?>

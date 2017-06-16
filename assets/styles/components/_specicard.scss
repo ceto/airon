@@ -16,30 +16,32 @@
   }
   @include breakpoint(xlarge) {
     padding:map-get($grid-column-gutter,large)/2 map-get($grid-column-gutter,large)/2 5rem;
-  }
-
-  @include breakpoint(xlarge) {
     margin-bottom: map-get($grid-column-gutter,large)/2;
   }
 
   a {
     color:inherit;
   }
-  .homespecs .column:nth-child(2n+1) & {
+  .homespecs .column & {
     @include breakpoint(xlarge) {
         margin-right: map-get($grid-column-gutter,large)/4;
     }
   }
-  .homespecs .column:nth-child(2n) & {
+  .homespecs .column:last-child() & {
     @include breakpoint(xlarge) {
-        margin-left: map-get($grid-column-gutter,large)/4;
+        margin-right:0;
     }
   }
 }
-
+.specicard__title {
+  line-height: 1.2;
+  @include breakpoint(xlarge) {
+    font-size: 1.5rem;
+  }
+}
 .specicard__summary {
   font-size: .875rem;
-  //display: none;
+  display: none;
 }
 .specicard__list {
   font-size: .875rem;

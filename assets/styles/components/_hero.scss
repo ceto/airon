@@ -1,10 +1,10 @@
 .hero {
   padding-top:4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   color:#fff;
   @include breakpoint(large) {
-    padding-top:16vw;
-    padding-bottom: 6vw;
+    padding-top:8vw;
+    padding-bottom: 8vw;
   }
 }
 
@@ -17,13 +17,20 @@
   text-shadow:0 0 3px rgba(#000,.5);
 }
 
-
+.hero__logo {
+  width:4rem;
+  margin-bottom: 1rem;
+  @include breakpoint(large) {
+    width:6.5rem;
+    margin-bottom: 2rem;
+  }
+}
 .hero__title {
-  font-size: 1.5rem;
+  font-size: 1.333rem;
   font-family: $body-font-family;
   font-weight: $global-weight-normal;
   @include breakpoint(large) {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 }
 .hero__lead {

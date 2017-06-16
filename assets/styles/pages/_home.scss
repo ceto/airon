@@ -5,5 +5,8 @@
   background-position: center;
   background-attachment: fixed;
   background-image: url(../images/homeheader.jpg);
-  margin-top: -5.25rem;
+  @include breakpoint(xlarge) {
+    padding-top: 5.25rem;
+    margin-top: -5.25rem;
+  }
 }

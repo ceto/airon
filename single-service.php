@@ -1,8 +1,8 @@
 <?php get_template_part('templates/service', 'header'); ?>
 <?php while (have_posts()) : the_post(); ?>
-<article <?php post_class('wrapper ps ps--notop'); ?>>
+<article <?php post_class('wrapper'); ?>>
         <div class="row">
-            <div class="columns tablet-8 ps--narrow">
+            <div class="columns tablet-8 ps ps--narrow">
                 <header>
                     <h1 class="service__title"><?php the_title(); ?></h1>
                     <div class="service__lead"><?php the_excerpt(); ?></div>
@@ -15,21 +15,17 @@
                 </footer>
                 <?php comments_template('/templates/comments.php'); ?>
             </div>
-            <div class="columns tablet-4 ps--narrow">
+            <div class="columns tablet-4 ps ps--narrow">
                 <aside class="sidebar sidebar--service">
                     <p>sidebar comes here lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure incidunt necessitatibus voluptatum at voluptas eum, soluta esse delectus cum quos explicabo porro minima velit, dolorem maxime excepturi neque totam quam....</p>
                 </aside>
             </div>
         </div>
 </article>
-<aside class="container ps ps--narow ps--light">
-  <div class="wrapper">
-    <div class="row tablet-up-2">
-        <div class="column"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ratione dolorum fugiat quia voluptatibus recusandae maiores fuga beatae animi autem velit harum, ipsa architecto, nesciunt? Molestiae minus, tempore sapiente earum!</p></div>
-        <div class="column"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ratione dolorum fugiat quia voluptatibus recusandae maiores fuga beatae animi autem velit harum, ipsa architecto, nesciunt? Molestiae minus, tempore sapiente earum!</p></div>
-        <div class="column"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ratione dolorum fugiat quia voluptatibus recusandae maiores fuga beatae animi autem velit harum, ipsa architecto, nesciunt? Molestiae minus, tempore sapiente earum!</p></div>
+<aside class="wrapper service__relposts ps ps--narrow">
+    <div class="row column">
+      <?php get_template_part('templates/relposts'); ?>
     </div>
-  </div>
 </aside>
 <?php endwhile; ?>
 <?php

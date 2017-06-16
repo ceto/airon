@@ -13,7 +13,7 @@
   </div>
 </section>
 <nav class="servicenav">
-  <div class="wrapper">
+  <div class="container">
   <?php
       $actid=get_the_id();
       $args = array(

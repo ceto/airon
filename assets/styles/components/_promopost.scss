@@ -1,0 +1,44 @@
+.promoposts {
+
+}
+.promopost {
+  margin-bottom: .5rem;
+}
+.promopost__item {
+  position: relative;
+  // width: 50%;
+  // float:left;
+}
+.promopost__updated {
+  display: inline-block;
+  font-size: .75rem;
+  //font-family: $header-font-family;
+  //font-variant: small-caps;
+  //font-weight: $global-weight-bold;
+  //text-transform: uppercase;
+  &:after {
+    content:' — '
+  }
+}
+.promopost__title {
+  display: inline-block;
+  font-size: .875rem;
+  margin:0;
+  a {
+    color:inherit;
+    &:after {
+      content: ' […]';
+      //color:$primary-color;
+      font-size: .875em;
+      font-family: $body-font-family;
+      font-weight: $global-weight-normal;
+    }
+  }
+}
+
+
+.promoposts__action {
+  font-size: .75rem;
+  font-family: $header-font-family;
+  font-weight: $global-weight-semibold;
+}

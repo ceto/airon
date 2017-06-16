@@ -47,7 +47,7 @@ function airon_custom_post_types() {
     'show_in_admin_bar'     => true,
     'show_in_nav_menus'     => true,
     'can_export'            => true,
-    'has_archive'           => true,
+    'has_archive'           => false,
     'exclude_from_search'   => false,
     'publicly_queryable'    => true,
     'capability_type'       => 'page',
@@ -105,6 +105,110 @@ function airon_custom_post_types() {
   );
 
   register_post_type( 'member', $args );
+
+  //Clients
+  $labels = array(
+    'name'                  => _x( 'Client', 'Client General Name', 'airon' ),
+    'singular_name'         => _x( 'Client', 'Client Singular Name', 'airon' ),
+    'menu_name'             => __( 'Clients', 'airon' ),
+    'name_admin_bar'        => __( 'Client', 'airon' ),
+    'archives'              => __( 'Client Archives', 'airon' ),
+    'parent_item_colon'     => __( 'Parent Client:', 'airon' ),
+    'all_items'             => __( 'Clients', 'airon' ),
+    'add_new_item'          => __( 'Add New Client', 'airon' ),
+    'add_new'               => __( 'Add New', 'airon' ),
+    'new_item'              => __( 'New Client', 'airon' ),
+    'edit_item'             => __( 'Edit Client', 'airon' ),
+    'update_item'           => __( 'Update Client', 'airon' ),
+    'view_item'             => __( 'View Client', 'airon' ),
+    'search_items'          => __( 'Search Client', 'airon' ),
+    'not_found'             => __( 'Not found', 'airon' ),
+    'not_found_in_trash'    => __( 'Not found in Trash', 'airon' ),
+    'featured_image'        => __( 'Client Photo', 'airon' ),
+    'set_featured_image'    => __( 'Set Client photo', 'airon' ),
+    'remove_featured_image' => __( 'Remove Client photo', 'airon' ),
+    'use_featured_image'    => __( 'Use as Client photo', 'airon' ),
+    'insert_into_item'      => __( 'Insert into Client', 'airon' ),
+    'uploaded_to_this_item' => __( 'Uploaded to this Client', 'airon' ),
+    'items_list'            => __( 'Clients list', 'airon' ),
+    'items_list_navigation' => __( 'Clients list navigation', 'airon' ),
+    'filter_items_list'     => __( 'Filter Clients list', 'airon' ),
+  );
+  $args = array(
+    'label'                 => __( 'Clients', 'airon' ),
+    'description'           => __( 'Client Description', 'airon' ),
+    'labels'                => $labels,
+    'supports'              => array('title', 'thumbnail', 'page-attributes'),
+    'taxonomies'            => array(),
+    'hierarchical'          => false,
+    'public'                => true,
+    'show_ui'               => true,
+    'show_in_menu'          => 'edit.php?post_type=service',
+    'menu_position'         => 5,
+    'menu_icon'             => 'dashicons-universal-access-alt',
+    'show_in_admin_bar'     => true,
+    'show_in_nav_menus'     => true,
+    'can_export'            => true,
+    'has_archive'           => false,
+    'exclude_from_search'   => false,
+    'publicly_queryable'    => true,
+    'capability_type'       => 'page',
+  );
+
+  register_post_type( 'client', $args );
+
+  //Testimonials
+  $labels = array(
+    'name'                  => _x( 'Testimonial', 'Testimonial General Name', 'airon' ),
+    'singular_name'         => _x( 'Testimonial', 'Testimonial Singular Name', 'airon' ),
+    'menu_name'             => __( 'Testimonials', 'airon' ),
+    'name_admin_bar'        => __( 'Testimonial', 'airon' ),
+    'archives'              => __( 'Testimonial Archives', 'airon' ),
+    'parent_item_colon'     => __( 'Parent Testimonial:', 'airon' ),
+    'all_items'             => __( 'Testimonials', 'airon' ),
+    'add_new_item'          => __( 'Add New Testimonial', 'airon' ),
+    'add_new'               => __( 'Add New', 'airon' ),
+    'new_item'              => __( 'New Testimonial', 'airon' ),
+    'edit_item'             => __( 'Edit Testimonial', 'airon' ),
+    'update_item'           => __( 'Update Testimonial', 'airon' ),
+    'view_item'             => __( 'View Testimonial', 'airon' ),
+    'search_items'          => __( 'Search Testimonial', 'airon' ),
+    'not_found'             => __( 'Not found', 'airon' ),
+    'not_found_in_trash'    => __( 'Not found in Trash', 'airon' ),
+    'featured_image'        => __( 'Testimonial Photo', 'airon' ),
+    'set_featured_image'    => __( 'Set Testimonial photo', 'airon' ),
+    'remove_featured_image' => __( 'Remove Testimonial photo', 'airon' ),
+    'use_featured_image'    => __( 'Use as Testimonial photo', 'airon' ),
+    'insert_into_item'      => __( 'Insert into Testimonial', 'airon' ),
+    'uploaded_to_this_item' => __( 'Uploaded to this Testimonial', 'airon' ),
+    'items_list'            => __( 'Testimonials list', 'airon' ),
+    'items_list_navigation' => __( 'Testimonials list navigation', 'airon' ),
+    'filter_items_list'     => __( 'Filter Testimonials list', 'airon' ),
+  );
+  $args = array(
+    'label'                 => __( 'Testimonials', 'airon' ),
+    'description'           => __( 'Testimonial Description', 'airon' ),
+    'labels'                => $labels,
+    'supports'              => array('title', 'editor', 'page-attributes'),
+    'taxonomies'            => array(),
+    'hierarchical'          => false,
+    'public'                => true,
+    'show_ui'               => true,
+    'show_in_menu'          => 'edit.php?post_type=service',
+    'menu_position'         => 5,
+    'menu_icon'             => 'dashicons-universal-access-alt',
+    'show_in_admin_bar'     => true,
+    'show_in_nav_menus'     => true,
+    'can_export'            => true,
+    'has_archive'           => false,
+    'exclude_from_search'   => false,
+    'publicly_queryable'    => true,
+    'capability_type'       => 'page',
+  );
+
+  register_post_type( 'testimonial', $args );
+
+
 
 }
 add_action( 'init', 'airon_custom_post_types', 0 );

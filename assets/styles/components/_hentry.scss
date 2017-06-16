@@ -4,11 +4,11 @@
   }
 }
 .hentry__meta {
-  margin-bottom: 0rem;
+  margin-bottom: 0;
 }
 .hentry__title {
   font-size: 1.125rem;
-  margin:0 0 .5em;
+  margin:0 0 .25em;
   a {
     color:inherit;
   }
@@ -17,6 +17,7 @@
   }
   @include breakpoint(xlarge) {
     font-size: 1.5rem;
+    //max-width: 25em;
   }
 }
 
