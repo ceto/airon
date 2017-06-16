@@ -1,11 +1,25 @@
 .mobilenavcanvas {
   font-family: $header-font-family;
+  font-weight: $global-weight-semibold;
   font-size: .875rem;
   color:$medium-gray;
   padding:7% 1.5rem;
 }
 
 .mobilenav__title {
-  font-size: .875rem;
+  font-size:inherit;
   opacity: .5;
+}
+
+.mobilecanvas__footer {
+  margin-top: 4rem;
+  a {
+    color:inherit;
+    opacity: .75;
+    &:hover, &:focus {
+      opacity:1;
+      color:#fff;
+      text-decoration: none;
+    }
+  }
 }

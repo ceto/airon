@@ -22,7 +22,8 @@ $specs = get_terms([
             <?php foreach ($specs as $key => $speci) : ?>
             <div class="column">
                 <section class="coinfo ps ps--narrow">
-                    <img class="coinfo__logo" src="http://placehold.it/500x120" alt="Co. logo">
+                    <?php $logo = get_field( 'logo', 'specialization_'.$speci->term_id ) ?>
+                    <img class="coinfo__logo" src="<?= $logo['url'] ?>" alt="<?= $speci->name ?>">
                     <h3 class="coinfo__coname"><?= get_field( 'company_name', 'specialization_'.$speci->term_id ) ?></h3>
                     <p class="coinfo__addr">
                         H-<?= get_field( 'zip', 'specialization_'.$speci->term_id ) ?>, <?= get_field( 'city', 'specialization_'.$speci->term_id ) ?><br>

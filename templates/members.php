@@ -2,7 +2,7 @@
 <h2 class="indentedtitle"><?= __('Meet the team', 'airon') ?></h2>
 <?php
   $the_members = new WP_Query( array(
-    'posts_per_page'      => 5,
+    'posts_per_page'      => -1,
     'post_type' => array('member'),
   )); ?>
 <div class="row small-up-2 medium-up-3 tablet-up-4 large-up-4 xlarge-up-5">

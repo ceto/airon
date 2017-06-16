@@ -21,3 +21,9 @@
   function speccolor($spec_id) {
     return '#'.get_field( 'color', 'specialization_'.$spec_id );
   }
+
+function airon_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'airon_mime_types');

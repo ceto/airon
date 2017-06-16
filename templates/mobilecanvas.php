@@ -12,10 +12,6 @@
       endif;
     ?>
 </nav>
-<div class="mobilecontact">
-    <p>
-        <strong>Kapcsolatfelvétel</strong><br>
-        Tel.: +36 (70) 770 5653<br>
-        E-mail: office@airon.hu
-    </p>
-</div>
+<footer class="mobilecanvas__footer">
+  <?php dynamic_sidebar('sidebar-offcanvas'); ?>
+</footer>

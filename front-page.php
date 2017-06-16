@@ -73,7 +73,12 @@ $specs = get_terms([
 </div>
 <div class="container ps ps--narrow ps--medium">
     <div class="row column">
+        <h2 class="indentedtitle"><?= __('Recommended by Our lovely clients', 'airon') ?></h2>
+    </div>
+    <div class="wrapper wrapper--narrow">
+    <div class="row column">
         <?php get_template_part('templates/testimonials'); ?>
+    </div>
     </div>
 </div>
 <div class="container ps ps--narrow">
