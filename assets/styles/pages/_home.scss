@@ -10,3 +10,32 @@
     margin-top: -5.25rem;
   }
 }
+
+.homespecs {
+  padding:4rem 0 2rem;
+  background-color: $black;
+  color:$white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url(../images/homeheader.jpg);
+}
+
+.homedividedspec {
+  background-color: get-color(primary);
+  color:$white;
+  box-shadow: 0 -.5rem .5rem -.5rem rgba(#000,.5);
+
+  h3 {
+    em {
+      font-family: $body-font-family;
+      font-weight: $global-weight-normal;
+      font-size: .75em;
+    }
+    &:after {
+      content:'.';
+    }
+  }
+
+}

@@ -2,9 +2,18 @@
   padding-top:4rem;
   padding-bottom: 3rem;
   color:#fff;
+  background-color: $black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url(../images/homeheader.jpg);
   @include breakpoint(large) {
-    padding-top:8vw;
+    padding-top:11vw;
     padding-bottom: 8vw;
+  }
+  @include breakpoint(xlarge) {
+    margin-top: -5.25rem;
   }
 }
 
