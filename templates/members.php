@@ -26,4 +26,4 @@
 <?php endwhile; ?>
 </div>
 </aside>
-<?php wp_reset_query(); ?>
+<?php wp_reset_postdata(); ?>

@@ -1,3 +1,62 @@
+.button {
+  //font-weight: $global-weight-semibold;
+  text-transform: uppercase;
+}
+input, textarea {
+    // Placeholder text
+    &::placeholder {
+      transition: color 0.25s;
+    }
+    &:focus::placeholder {
+      color: transparent;
+    }
+}
+.is-invalid-input:not(:focus) {
+  background-color: $white;
+  border-color:$input-error-color;
+}
+
+.smartlabel .form-error {
+  position: absolute;
+  bottom:$form-spacing;
+  right: $form-spacing/2;
+  transform:translateY(50%);
+  margin:0;
+  padding:0;
+  line-height: 1;
+}
+
+.smartlabel {
+  position: relative;
+  //overflow: hidden;
+
+}
+
+.smartlabel__text {
+  position: absolute;
+  bottom:$form-spacing;
+  right: $form-spacing;
+  transform:translateY(50%);
+  display: inline-block;
+  font-size: .75rem;
+  line-height: 1;
+  padding: 0 $form-spacing/2;
+  transition: all .125s ease-out;
+  color:transparent;
+
+  *:focus + & {
+    color: inherit;
+    right:0;
+  }
+  .is-invalid-input:focus + & {
+    right: $form-spacing;
+    color:transparent;
+  }
+
+}
+
+
+
 .indentedtitle {
   text-transform: uppercase;
   font-size: 1rem;

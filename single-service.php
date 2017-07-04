@@ -17,7 +17,32 @@
             </div>
             <div class="columns tablet-4 ps ps--narrow">
                 <aside class="sidebar sidebar--service">
-                    <p>sidebar comes here lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure incidunt necessitatibus voluptatum at voluptas eum, soluta esse delectus cum quos explicabo porro minima velit, dolorem maxime excepturi neque totam quam....</p>
+                    <section class="callexpert">
+                      <h3 class="callexpert__title">Our Expert is here to help You</h3>
+                      <?php
+                        $the_members = new WP_Query( array(
+                          'posts_per_page'      => 1,
+                          'post_type' => array('member'),
+                          'orderby' => 'menu_order',
+                          'order' => 'RAND'
+                        ));
+                      ?>
+                      <?php while ($the_members->have_posts() ) : $the_members->the_post(); ?>
+                      <div class="membercard membercard--theonly">
+                        <figure class="membercard__fig">
+                              <?php the_post_thumbnail(); ?>
+                        </figure>
+                        <h3 class="membercard__name"><?php the_title(); ?></h3>
+                        <p class="membercard__prof"><?= get_field('profession') ?></p>
+                        <p class="membercard__contact">
+                          <a href="tel:<?= get_field('phone') ?>"><?= get_field('phone') ?></a><br>
+                          <a href="mailto:<?= get_field('email') ?>"><?= get_field('email') ?></a>
+                        </p>
+                      </div>
+                      <?php endwhile; ?>
+                      <?php wp_reset_postdata(); ?>
+                      <a href="<?php the_permalink(4990485); ?>" class="button medium expanded">Ask a Question</a>
+                    </section>
                 </aside>
             </div>
         </div>

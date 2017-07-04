@@ -14,7 +14,10 @@ $specs = get_terms([
 
     <div class="wrapper ps ps--narrow">
         <div class="row column">
-            <div class="lead"><?php the_content(); ?></div>
+            <div class="lead">
+                <?php the_content(); ?>
+                <p><a href="<?php the_permalink(4990485); ?>" class="button">Let's get started</a></p>
+            </div>
         </div>
     </div>
     <div class="wrapper wrapper--narrow ps ps--notop">

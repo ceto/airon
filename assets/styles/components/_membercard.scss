@@ -1,3 +1,7 @@
+.membercard--theonly {
+  max-width: 15rem;
+  margin:0 auto;
+}
 .membercard__fig {
   margin:0 0 .5rem;
 }
@@ -8,4 +12,8 @@
 }
 .membercard__prof {
   font-style: italic;
+}
+
+.membercard__contact {
+  font-size: .875rem;
 }

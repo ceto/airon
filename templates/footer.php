@@ -1,3 +1,4 @@
+<?php if ( !is_page_template('template-contactform.php') ) :?>
 <footer class="sitefooter" role="contentinfo">
     <div class="container">
         <div class="sitefooter__top column row">
@@ -17,3 +18,4 @@
         </div>
     </div>
 </footer>
+<?php endif; ?>

@@ -17,6 +17,7 @@
   }
 }
 
+
 .hero__content {
   @include grid-column-row();
   max-width:65rem;
@@ -50,4 +51,53 @@
 }
 .hero__actions {
   margin-top: 2.5rem;
+}
+
+
+
+
+.hero--bigcontent {
+  background-image: url(../images/contactformbg.jpg);
+  //background-image: none;
+  //background-color: $dark-gray;
+  .hero__content {
+    max-width:46rem;
+    //background-color: rgba(#000,.5);
+    h1 {
+      font-family: $body-font-family;
+      font-weight: $global-weight-normal;
+      text-transform: uppercase;
+      line-height: 1.2;
+      font-size: 3rem;
+      font-size: calc(2rem + 2vw);
+      margin:0 0 .5em;
+      em {
+        display: block;
+        font-style: normal;
+        font-size: 56.666%;
+        //color:get-color(primary);
+      }
+    }
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .abide-formerror {
+      font-size: .875rem;
+      border:1px solid $input-error-color;
+      padding:.75em;
+      color: $input-error-color;
+      text-align:center;
+      //max-width: 25em;
+      margin:0 auto 2rem;
+    }
+    form {
+      text-align: left;
+      text-shadow:none;
+    }
+    label {
+      //color:inherit;
+    }
+
+  }
 }
