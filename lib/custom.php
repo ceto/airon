@@ -27,3 +27,5 @@ function airon_mime_types($mimes) {
   return $mimes;
 }
 add_filter('upload_mimes', 'airon_mime_types');
+
+//add_post_type_support( 'post', 'excerpt' );

@@ -27,26 +27,31 @@ $specs = get_terms([
 
 <div class="container ps">
     <div class="row">
-        <div class="columns tablet-10 xlarge-8">
+        <div class="columns tablet-10 xlarge-8 tablet-centered">
             <h2><?php the_title() ?></h2>
-            <div class="lead"><?php the_content(); ?></div>
+            <div class="lead">
+                <?php the_content(); ?>
+                <br><a href="#" class="button">Meet the team</a>
+            </div>
         </div>
     </div>
 </div>
 
 
 <div class="container ps ps--narrow">
-    <div class="row column">
-        <?php get_template_part('templates/members'); ?>
+    <div class="row">
+        <div class="columns tablet-10 xlarge-8 tablet-centered">
+            <?php get_template_part('templates/members'); ?>
+        </div>
     </div>
 </div>
 
 <div class="homespecs">
     <div class="container">
-        <div class="row column">
-            <h2 class="indentedtitle"><?= __('Specs & Services', 'airon') ?></h2>
-        </div>
-        <div class="row tablet-up-2 xlarge-up-4 xlarge-collapse" data-equalizer data-equalize-on="tablet">
+<!--         <div class="row column">
+            <h2 class="indentedtitle"><?php //_e('Specs & Services', 'airon') ?></h2>
+        </div> -->
+        <div class="row tablet-up-2" data-equalizer data-equalize-on="tablet">
             <?php foreach ($specs as $key => $speci) : ?>
             <?php
                 $args = array(
@@ -63,9 +68,9 @@ $specs = get_terms([
                 );
                 $services = new WP_Query( $args );
             ?>
-            <div class="column">
+            <div class="column specicol ps " style="background-color: <?= speccolor($speci->term_id) ?>">
                 <div class="specicard" style="background-color: <?= speccolor($speci->term_id) ?>" data-equalizer-watch>
-                    <h3 class="specicard__title"><a href="<?= get_term_link($speci) ?>"><?= $speci->name ?>.</a></h3>
+                    <h3 class="specicard__title"><a href="<?= get_term_link($speci) ?>"><?= $speci->name ?></a></h3>
                     <ul class="specicard__list">
                         <?php while ($services->have_posts()) : $services->the_post(); ?>
                         <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
@@ -90,7 +95,7 @@ $specs = get_terms([
         <?php get_template_part('templates/promopost'); ?>
     </div>
 </div>
-<div class="container ps ps--narrow ps--medium">
+<div class="container ps ps--narrow ">
     <div class="row column">
         <h2 class="indentedtitle"><?= __('Recommended by Our lovely clients', 'airon') ?></h2>
     </div>

@@ -58,7 +58,7 @@
   $speci=$specializations[0];
 ?>
 <style>
-  .pagehead, .menutoggler:after {
+  .pagehead,  .menu--sec, .menutoggler:after {
     background-color: <?= speccolor($speci->term_id) ?>;
   }
   .banner__brand svg #firstletter {
@@ -67,7 +67,7 @@
   .menu--main .active > a:before,
   .menu--mobile .active > a:before,
   .footer__specilist .active>a:after,
-  .scrollmenu .active > a  {
+  .scrollmenu .active > a {
     color: <?= speccolor($speci->term_id) ?>;
   }
   .menutoggler:after {

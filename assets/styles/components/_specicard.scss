@@ -1,22 +1,46 @@
-.specicard {
+.specicol {
   position: relative;
+  z-index: 1;
+  background-color: $primary-color;
+  &:before {
+    z-index: 0;
+    display: block;
+    position: absolute;
+    content: '';
+    background-color: inherit;
+    height:100%;
+    width:50vw;
+    top:0;
+    left:0;
+  }
+  &:nth-child(odd) {
+    background-color: $dark-gray;
+    &:before {
+      left:auto;
+      right:0;
+    }
+  }
+}
+.specicard {
+  //color:#fff;
+  text-shadow: 0 0 .125em rgba(#000,.125);
+  position: relative;
+  z-index: 2;
 
-  background-color: $dark_gray;
+  background-color: inherit;
   color:$white;
-  padding:map-get($grid-column-gutter,small) map-get($grid-column-gutter,small) 5rem;
-  margin-bottom: map-get($grid-column-gutter,small);
+  padding:2rem 0 5rem;
+
   @include breakpoint(medium) {
-    margin-bottom: map-get($grid-column-gutter,medium);
-    padding:map-get($grid-column-gutter,medium) map-get($grid-column-gutter,medium) 5rem;
+    padding:2rem 0 5rem;
   }
 
   @include breakpoint(large) {
-    margin-bottom: map-get($grid-column-gutter,large);
-    padding:map-get($grid-column-gutter,large)/2 map-get($grid-column-gutter,large)/2 5rem;
+    padding:2rem 0 5rem;
   }
+
   @include breakpoint(xlarge) {
-    padding:map-get($grid-column-gutter,large)/2 map-get($grid-column-gutter,large)/2 5rem;
-    margin-bottom: map-get($grid-column-gutter,large)/2;
+    padding:2rem 0 5rem;
   }
 
   a {
@@ -24,27 +48,33 @@
   }
   .homespecs .column & {
     @include breakpoint(xlarge) {
-        margin-right: map-get($grid-column-gutter,large)/4;
+        //margin-right: map-get($grid-column-gutter,large)/4;
     }
   }
   .homespecs .column:last-child() & {
     @include breakpoint(xlarge) {
-        margin-right:0;
+        //margin-right:0;
     }
   }
 }
 .specicard__title {
-  line-height: 1.2;
+  //line-height: 1.2;
   @include breakpoint(xlarge) {
-    font-size: 1.5rem;
+    //font-size: 1.5rem;
+  }
+  a {
+    &:after {
+      content:'.';
+    }
   }
 }
 .specicard__summary {
-  font-size: .875rem;
-  display: none;
+  //font-size: .875rem;
+  //display: none;
 }
 .specicard__list {
-  font-size: .875rem;
+  //display: none;
+  //font-size: 1rem;
   font-weight: $global-weight-semibold;
   font-family: $header-font-family;
   list-style: none;
@@ -52,7 +82,7 @@
   padding:0;
   > li {
     display: inline;
-    white-space: nowrap;
+    //white-space: nowrap;
     &:not(:last-child):after {
       content:' · ';
     }

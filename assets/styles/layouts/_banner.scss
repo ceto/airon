@@ -2,6 +2,8 @@
   position: relative;
   > .container {
     background: $body-background;
+    position: relative;
+    box-shadow: 0 0 .5rem 0 rgba(#000,.25);
   }
 }
 

@@ -1,3 +1,4 @@
+
 .button {
   //font-weight: $global-weight-semibold;
   text-transform: uppercase;
@@ -98,5 +99,24 @@ cite {
 .cite__company {
   &:before {
     content:' / ';
+  }
+}
+
+dl {
+  > dt {
+    font-family: $header-font-family;
+    text-transform: uppercase;
+  }
+  > dd {
+    margin-bottom: 1em;
+  }
+}
+
+dl.metadef {
+  > dt {
+    font-size: .75rem;
+  }
+  > dd {
+    font-size: .875rem;
   }
 }

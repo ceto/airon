@@ -1,9 +1,12 @@
 .menu--main {
   text-transform: uppercase;
   font-family: $header-font-family;
-  float:right;
-  clear:right;
-  margin:0 0 .5rem;
+  position: absolute;
+  margin:0 0;
+  padding:0 1.666rem 0 0;
+  right:0;
+  bottom:.4125rem;
+  max-width:80%;
   > li {
     > a {
       color:inherit;
@@ -33,22 +36,26 @@
 }
 
 .menu--sec {
-  margin:0 .875rem .5rem;
+  position: absolute;
+  right:0;
+  margin:0 0;
+  padding:0 1.5rem 0 0;
   //padding:0 .25rem;
   //text-transform: capitalize;
-  font-family: $header-font-family;
+  //font-family: $header-font-family;
   font-size: .875rem;
-  float: right;
   background-color: $dark-gray;
-  color:$medium-gray;
-  font-weight: $global-weight-semibold;
-  border-left: 3rem solid $medium-gray;
+  color:$white;
+  //font-weight: $global-weight-semibold;
   > li {
-    border-left: 1px solid $medium-gray;
+    &:not(:first-child) {
+      border-left: 1px solid $medium-gray;
+    }
     > a {
       color:inherit;
       position: relative;
-      padding:.5rem .75rem;
+      padding:.5rem 1rem;
+      text-transform: lowercase;
     }
   }
   .active {

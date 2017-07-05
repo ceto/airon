@@ -12,7 +12,7 @@
   </div>
 </div>
 <style>
-  .pagehead, .menutoggler:after{
+  .pagehead, .menu--sec, .menutoggler:after{
     background-color: <?= speccolor(get_queried_object()->term_id) ?>;
   }
   .banner__brand svg #firstletter {

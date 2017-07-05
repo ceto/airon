@@ -1,0 +1,31 @@
+.thepost__aside {
+  width:100%;
+  position: relative;
+  @include breakpoint('tablet') {
+
+    dl.metadef {
+      position: absolute;
+      right:0;
+      top:.25rem;
+    }
+  }
+}
+
+
+dl.metadef {
+  > dt {
+    font-size: .75rem;
+  }
+  > dd {
+    font-size: .875rem;
+  }
+}
+
+.thepost__lead {
+  font-size: 1.125rem;
+  font-weight: $global-weight-bold;
+  line-height: $lead-lineheight;
+  @include breakpoint(tablet) {
+      font-size: 1.125rem;
+  }
+}

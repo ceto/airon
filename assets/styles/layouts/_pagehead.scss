@@ -19,6 +19,9 @@
 .pagehead__title {
   font-size: 1.5rem;
   margin:.125em 0 0;
+  &:after {
+    content:'.';
+  }
   @include breakpoint(xlarge) {
     font-size: 2rem;
   }
@@ -37,3 +40,17 @@
   }
 }
 
+
+.pagehead__meta {
+  margin-top: 1rem;
+}
+.pagehead__meta__by {
+  display: inline-block;
+  font-family: $header-font-family;
+  font-weight: $global-weight-semibold;
+  font-size: 1.25rem;
+  color:inherit;
+}
+.pagehead__meta__updated {
+  font-size: 1rem;
+}
