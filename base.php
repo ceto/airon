@@ -24,11 +24,6 @@ use Roots\Sage\Wrapper;
                   <main class="main" role="main">
                     <?php include Wrapper\template_path(); ?>
                   </main><!-- /.main -->
-                  <?php if (Setup\display_sidebar()) : ?>
-                    <aside class="sidebar container ps ps--light" role="complementary">
-                      <?php include Wrapper\sidebar_path(); ?>
-                    </aside><!-- /.sidebar -->
-                  <?php endif; ?>
                 </div><!-- /.document -->
                 <?php
                     do_action('get_footer');

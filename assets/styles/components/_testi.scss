@@ -1,0 +1,21 @@
+.testi__quote {
+  position: relative;
+  padding:0;
+  border:none;
+  font-size: 1.5rem;
+}
+
+.cite--testi {
+  font-size: 1rem;
+  // @include breakpoint('large') {
+  //   position: absolute;
+  //   top:.25rem;
+  //   right:100%;
+  //   padding-right: map-get($grid-column-gutter,large);
+  //   width:32%;
+  //   text-align: right;
+  //   &:before {
+  //     display: none;
+  //   }
+  // }
+}

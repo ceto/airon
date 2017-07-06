@@ -9,7 +9,7 @@
     <a href="<?= get_term_link( $speci->term_id ); ?>">
       <img class="pagehead__logo" src="<?= get_stylesheet_directory_uri(); ?>/dist/images/logoa.svg" alt="Airon">
     </a>
-    <h3 class="pagehead__title"><a href="<?= get_term_link( $speci->term_id ); ?>"><?= $speci->name ?>.</a></h3>
+    <h3 class="pagehead__title"><a href="<?= get_term_link( $speci->term_id ); ?>"><?= $speci->name ?></a></h3>
   </div>
 </section>
 <nav class="servicenav">

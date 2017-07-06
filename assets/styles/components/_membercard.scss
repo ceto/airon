@@ -1,3 +1,6 @@
+.membercard {
+  margin-bottom: $paragraph-margin-bottom;
+}
 .membercard--theonly {
   max-width: 13rem;
   margin:0 auto;
@@ -16,4 +19,8 @@
 
 .membercard__contact {
   font-size: .875rem;
+  a {
+    color:inherit;
+    //text-decoration: underline;
+  }
 }

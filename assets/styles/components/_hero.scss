@@ -9,8 +9,8 @@
   background-attachment: fixed;
   background-image: url(../images/homeheader.jpg);
   @include breakpoint(large) {
-    padding-top:11vw;
-    padding-bottom: 8vw;
+    padding-top:14vw;
+    padding-bottom: 9vw;
   }
   @include breakpoint(xlarge) {
     margin-top: -5.25rem;

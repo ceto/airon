@@ -5,19 +5,23 @@
   margin-bottom: .5rem;
 }
 .promopost__item {
-  margin-bottom: .25rem
+  margin-bottom: .25rem;
 }
 .promopost__updated {
-  display: inline-block;
-  font-size: .875rem;
+  display: inline;
+  font-weight: $global-weight-normal;
+  font-family: $body-font-family;
   &:after {
     content:' — '
   }
 }
 .promopost__title {
-  display: inline-block;
-  font-size: 1rem;
+  display: block;
+  font-size: .875rem;
   margin:0;
+  .homenews__promoposts & {
+    font-size: 1rem;
+  }
   a {
     color:inherit;
     &:after {
@@ -35,4 +39,7 @@
   font-size: .875rem;
   font-family: $header-font-family;
   font-weight: $global-weight-semibold;
+  .homenews__promoposts & {
+    font-size: 1rem;
+  }
 }

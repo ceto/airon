@@ -50,7 +50,9 @@ $global-font-size: 100%;
 $global-width: rem-calc(1600);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #aa1147,
+  //redprimary: #aa1147,
+  //purpleprimary: #993399,
+  primary: #d92478,
   secondary: #04add5,
   success: #4fba69,
   warning: #faa21b,
@@ -59,7 +61,7 @@ $foundation-palette: (
 );
 $light-gray: #fafaf6;
 $medium-gray: #eeeee2;
-$dark-gray: #333333;
+$dark-gray: #171717;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: #fff;
@@ -124,9 +126,9 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
+    'h1': ('font-size': 40),
+    'h2': ('font-size': 28),
+    'h3': ('font-size': 28),
     'h4': ('font-size': 25),
     'h5': ('font-size': 20),
     'h6': ('font-size': 16),
@@ -160,11 +162,11 @@ $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-normal;
 $defnlist-term-margin-bottom: 0;
-$blockquote-color: $dark-gray;
+$blockquote-color: $body-font-color;
 $blockquote-padding: rem-calc(9 20 0 19);
 $blockquote-border: 1px solid $medium-gray;
 $cite-font-size: rem-calc(13);
-$cite-color: $dark-gray;
+$cite-color: $body-font-color;
 $cite-pseudo-content: '\2014 \0020';
 $keystroke-font: $font-family-monospace;
 $keystroke-color: $black;

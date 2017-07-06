@@ -1,4 +1,14 @@
+.content {
+  * + {
+    h1,h2,h3,h4,h5,h6 {
+      margin-top: 1em;
+    }
+  }
 
+  li:not(:last-child) {
+    margin-bottom: $paragraph-margin-bottom/2;
+  }
+}
 .button {
   //font-weight: $global-weight-semibold;
   text-transform: uppercase;
@@ -81,10 +91,7 @@ cite {
     color:inherit;
   }
 }
-.testi__quote {
-  padding:0;
-  //font-style: italic;
-}
+
 .cite__name {
   font-size: 1.125em;
   display: block;

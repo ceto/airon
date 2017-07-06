@@ -12,14 +12,11 @@
 }
 
 .homespecs {
-  //padding:4rem 0 2rem;
-  background-color: $white;
-  color:$white;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  //background-image: url(../images/homeheader.jpg);
+  background-image: url(../images/homeheader.jpg);
 }
 
 .homedividedspec {
@@ -28,7 +25,8 @@
   box-shadow: 0 -.5rem .5rem -.5rem rgba(#000,.5);
 
   @include breakpoint(tablet) {
-    background-image: linear-gradient(-75deg, get-color(primary) 0 , get-color(primary) 49.666%, scale-color(get-color(primary), $lightness: -20%) 49.666%, scale-color(get-color(primary), $lightness: -20%) 50.333%,  $dark-gray 50.333%);
+    //background-image: linear-gradient(-90deg, get-color(primary) 0 , get-color(primary) 49.666%, scale-color(get-color(primary), $lightness: -20%) 49.666%, scale-color(get-color(primary), $lightness: -20%) 50.333%,  $dark-gray 50.333%);
+    background-image: linear-gradient(90deg, get-color(primary) 0 , get-color(primary) 50%,  $dark-gray 50%);
   }
 
   h3 {
@@ -41,5 +39,4 @@
       //content:'.';
     }
   }
-
 }

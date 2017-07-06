@@ -1,15 +1,18 @@
 .thepost__aside {
   width:100%;
   position: relative;
-  @include breakpoint('tablet') {
+  //background-color: red;
+  @include breakpoint('large') {
+    text-align: right;
 
     dl.metadef {
       position: absolute;
-      right:0;
+      right: - map-get($grid-column-gutter,large)/2;
       top:.25rem;
     }
   }
 }
+
 
 
 dl.metadef {
@@ -25,7 +28,20 @@ dl.metadef {
   font-size: 1.125rem;
   font-weight: $global-weight-bold;
   line-height: $lead-lineheight;
+  margin-bottom: $paragraph-margin-bottom;
   @include breakpoint(tablet) {
       font-size: 1.125rem;
   }
+}
+
+.thepost__title {
+  margin-bottom: $paragraph-margin-bottom*1.5;
+}
+.thepost_featimage {
+  margin-bottom: $paragraph-margin-bottom*2;
+  margin-top: $paragraph-margin-bottom;
+}
+
+.thepost__promoposts {
+  border-top: 1px solid $medium-gray;
 }

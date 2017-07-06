@@ -7,7 +7,7 @@
     <?php get_search_form(); ?>
 </div>
 <?php endif; ?>
-<div class="wrapper wrapper--narrow">
+<div class="wrapper wrapper--narrow ps ps--narrow">
     <div class="row column">
         <?php while (have_posts()) : the_post(); ?>
         <div class="ps ps--narrow">

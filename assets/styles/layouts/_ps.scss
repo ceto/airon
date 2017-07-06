@@ -17,6 +17,15 @@
   }
 }
 
+.ps--wide {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  @include breakpoint(large) {
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+  }
+}
+
 
 .ps--notop {
   padding-top: 0;
