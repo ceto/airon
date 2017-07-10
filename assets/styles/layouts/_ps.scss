@@ -77,11 +77,22 @@
 
 .ps--medium {
   background-color: $medium-gray;
+  &.ps--bordered {
+    border-color: $dark-gray;
+  }
 }
 
 
 .ps--light {
   background-color: $light-gray;
+  &.ps--bordered {
+    border-color: $medium-gray;
+  }
+}
+
+.ps--inverse {
+  background-color: $primary-color;
+  color:$body-background;
 }
 
 .ps--accent {

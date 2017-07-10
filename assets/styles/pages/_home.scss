@@ -20,23 +20,13 @@
 }
 
 .homedividedspec {
-  background-color: get-color(primary);
-  color:$white;
   box-shadow: 0 -.5rem .5rem -.5rem rgba(#000,.5);
 
   @include breakpoint(tablet) {
     //background-image: linear-gradient(-90deg, get-color(primary) 0 , get-color(primary) 49.666%, scale-color(get-color(primary), $lightness: -20%) 49.666%, scale-color(get-color(primary), $lightness: -20%) 50.333%,  $dark-gray 50.333%);
-    background-image: linear-gradient(90deg, get-color(primary) 0 , get-color(primary) 50%,  $dark-gray 50%);
+    background-image: linear-gradient(90deg, get-color(primary) 0 , get-color(primary) 50%,  transparent 50%);
   }
 
   h3 {
-    em {
-      font-family: $body-font-family;
-      font-weight: $global-weight-normal;
-      font-size: .75em;
-    }
-    &:after {
-      //content:'.';
-    }
   }
 }

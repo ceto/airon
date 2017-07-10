@@ -5,10 +5,20 @@
     }
   }
 
+
   li:not(:last-child) {
     margin-bottom: $paragraph-margin-bottom/2;
   }
 }
+
+h1,h2,h3,h4,h5,h6 {
+  em {
+    font-family: $body-font-family;
+    font-weight: $global-weight-normal;
+    font-size: .75em;
+  }
+}
+
 .button {
   //font-weight: $global-weight-semibold;
   text-transform: uppercase;

@@ -13,24 +13,15 @@
             <footer class="service__footer">
                 <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
             </footer>
-            <aside class="promoposts service__promoposts ps ps--narrow">
-                <h2 class="indentedtitle"><?= __('Related posts', 'airon') ?></h2>
-                <?php get_template_part('templates/promopost'); ?>
-            </aside>
+            <?php get_template_part('templates/relposts'); ?>
         </div>
         <div class="columns tablet-4 ps ps--narrow">
             <aside class="sidebar sidebar--service">
                 <section class="callexpert">
                     <h3 class="callexpert__title">Our Expert is here to help You</h3>
-                    <?php
-                    $the_members = new WP_Query( array(
-                    'posts_per_page'      => 1,
-                    'post_type' => array('member'),
-                    'orderby' => 'menu_order',
-                    'order' => 'RAND'
-                    ));
-                    ?>
-                    <?php while ($the_members->have_posts() ) : $the_members->the_post(); ?>
+                    <?php $themembers = get_field('contactmember'); ?>
+                    <?php foreach ($themembers as $key => $post) : ?>
+                    <?php setup_postdata( $post ); ?>
                     <div class="membercard membercard--theonly">
                         <figure class="membercard__fig">
                             <?php the_post_thumbnail(); ?>
@@ -42,7 +33,7 @@
                             <a href="mailto:<?= get_field('email') ?>"><?= get_field('email') ?></a>
                         </p>
                     </div>
-                    <?php endwhile; ?>
+                    <?php endforeach; ?>
                     <?php wp_reset_postdata(); ?>
                     <a href="<?php the_permalink(4990485); ?>" class="button medium expanded">Ask a Question</a>
                 </section>

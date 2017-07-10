@@ -16,8 +16,8 @@ $specs = get_terms([
         </div>
     </div>
 </section>
-<div class="homedividedspec">
-    <div class="container ps ps--narrow">
+<div class="homedividedspec ps ps--narrow ps--dark">
+    <div class="container">
         <div class="row column">
             <h2 class="indentedtitle"><?= __('Providing Business Services', 'airon') ?></h2>
         </div>
@@ -69,7 +69,7 @@ $specs = get_terms([
                         <?php endwhile; ?>
                     </ul>
                     <div class="specicard__summary"><?= term_description($speci); ?></div>
-                    <a href="<?= get_term_link($speci) ?>" class="specicard__action"><?= __('See all services','airon') ?></a>
+                    <a href="<?= get_term_link($speci) ?>" class="specicard__action"><?= __('Show','airon') ?> <?= $speci->name ?> <?= __('Services','airon') ?></a>
                 </div>
             </div>
             <?php endforeach; ?>
@@ -77,13 +77,13 @@ $specs = get_terms([
         <?php wp_reset_postdata(); ?>
     </div>
 </div>
-<div class="hometests ps--light">
+<div class="hometests aps--light">
     <div class="container ps ps--narrow">
         <?php get_template_part('templates/testimonials'); ?>
     </div>
 </div>
 
-<div class="homenews ps ps--dark">
+<div class="homenews ps ps--medium aps--bordered">
     <div class="container">
         <div class="row column">
             <aside class="promoposts homenews__promoposts">
