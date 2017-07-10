@@ -17,25 +17,27 @@
 
 
     $('.owl-plogos').owlCarousel({
-        margin: 50,
+        margin: 20,
         dots: false,
-        autoWidth: true,
-
+        autoWidth: false,
         responsive:{
           0:{
-              items:3,
+              items:4,
           },
           640: {
               items:4,
+              margin: 30,
           },
           768: {
               items:5,
           },
           1024: {
+            margin:50,
             items:6,
           },
           1240: {
-            items:7,
+            margin:80,
+            items:6,
           }
         }
     });
