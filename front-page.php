@@ -83,7 +83,7 @@ $specs = get_terms([
     </div>
 </div>
 
-<div class="homenews ps ps--medium aps--bordered">
+<div class="homenews ps ps--dark">
     <div class="container">
         <div class="row column">
             <aside class="promoposts homenews__promoposts">
