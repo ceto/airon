@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2017-09-13 10:44+0000\n"
+"POT-Creation-Date: 2017-09-13 10:50+0000\n"
 "Language: hu-HU\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
-"PO-Revision-Date: 2017-09-13 10:46+0000\n"
+"PO-Revision-Date: 2017-09-13 10:51+0000\n"
 "X-Generator: Loco - https://localise.biz/\n"
 "Project-Id-Version: Airon Theme\n"
 "Report-Msgid-Bugs-To: \n"
@@ -33,42 +33,6 @@ msgstr ""
 #: template-contactform.php:12
 msgid "There are some errors in your form."
 msgstr ""
-
-#: template-contactform.php:15 template-contactform.php:16
-msgid "Full name*"
-msgstr "Az ön neve*"
-
-#: template-contactform.php:18
-msgid "Name is required!"
-msgstr "Név megadás kötelező!"
-
-#: template-contactform.php:22
-msgid "Business name"
-msgstr "Cég neve"
-
-#: template-contactform.php:23
-msgid "Business name*"
-msgstr "Cég neve*"
-
-#: template-contactform.php:26 template-contactform.php:27
-msgid "E-mail address*"
-msgstr "E-mail cím"
-
-#: template-contactform.php:29
-msgid "E-mail is required!"
-msgstr "E-mail megadása kötelező"
-
-#: template-contactform.php:33 template-contactform.php:34
-msgid "Phone*"
-msgstr "Telefonszám*"
-
-#: template-contactform.php:36
-msgid "Phone is required!"
-msgstr "Telefonszám megadása kötelező!"
-
-#: template-contactform.php:40 template-contactform.php:41
-msgid "How can we help?"
-msgstr "Miben segíthetünk?"
 
 #. Name of the template
 msgid "The Team Template"
@@ -468,6 +432,14 @@ msgstr ""
 msgid "Mobile Off-Canvas"
 msgstr ""
 
+#: templates/homedivi.php:3
+msgid "<em>for</em> Corporate clients"
+msgstr "Céges <em>ügyfeleknek</em>"
+
+#: templates/homedivi.php:22
+msgid "<em>for</em> Private clients"
+msgstr "Magánszemélyek <em>részére</em>"
+
 #. Name of the theme
 msgid "Airon Theme"
 msgstr ""
@@ -525,6 +497,42 @@ msgstr "Kérdezzen"
 #: template-contact.php:37
 msgid "show on map"
 msgstr "mutasd a térképen"
+
+#: template-contactform.php:15 template-contactform.php:16
+msgid "Full name*"
+msgstr "Az ön neve*"
+
+#: template-contactform.php:18
+msgid "Name is required!"
+msgstr "Név megadás kötelező!"
+
+#: template-contactform.php:22
+msgid "Business name"
+msgstr "Cég neve"
+
+#: template-contactform.php:23
+msgid "Business name*"
+msgstr "Cég neve*"
+
+#: template-contactform.php:26 template-contactform.php:27
+msgid "E-mail address*"
+msgstr "E-mail cím"
+
+#: template-contactform.php:29
+msgid "E-mail is required!"
+msgstr "E-mail megadása kötelező"
+
+#: template-contactform.php:33 template-contactform.php:34
+msgid "Phone*"
+msgstr "Telefonszám*"
+
+#: template-contactform.php:36
+msgid "Phone is required!"
+msgstr "Telefonszám megadása kötelező!"
+
+#: template-contactform.php:40 template-contactform.php:41
+msgid "How can we help?"
+msgstr "Miben segíthetünk?"
 
 #: template-contactform.php:43
 msgid "Submit form"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2017-09-13 10:44+0000\n"
+"POT-Creation-Date: 2017-09-13 10:49+0000\n"
 "Language: \n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -522,6 +522,14 @@ msgstr ""
 
 #: templates/content-single.php:17
 msgid "Category"
+msgstr ""
+
+#: templates/homedivi.php:3
+msgid "<em>for</em> Corporate clients"
+msgstr ""
+
+#: templates/homedivi.php:22
+msgid "<em>for</em> Private clients"
 msgstr ""
 
 #: templates/mobilecanvas.php:8

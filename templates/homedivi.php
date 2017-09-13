@@ -1,6 +1,6 @@
 <div class="row">
     <div class="columns tablet-6">
-        <h3><em>for</em> Corporate clients</h3>
+        <h3><?= __('<em>for</em> Corporate clients', 'airon') ?></h3>
         <?php
         $args = array(
         'post_type' => array('service'),
@@ -19,7 +19,7 @@
         </ul>
     </div>
     <div class="columns tablet-6">
-        <h3><em>for</em> Private clients</h3>
+        <h3><?= __('<em>for</em> Private clients', 'airon') ?></h3>
         <?php
         $args = array(
         'post_type' => array('service'),
