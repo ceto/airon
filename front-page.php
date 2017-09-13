@@ -86,7 +86,7 @@ $specs = get_terms([
             <aside class="promoposts homenews__promoposts">
                 <h2 class="indentedtitle"><?= __('From Our Blog', 'airon') ?></h2>
                 <?php get_template_part('templates/promopost'); ?>
-                <a class="promoposts__action" href="<?php the_permalink(get_option( 'page_for_posts' )); ?>"><?= __('See all posts') ?>&hellip;</a>
+                <a class="promoposts__action" href="<?php the_permalink(get_option( 'page_for_posts' )); ?>"><?= __('See all posts','airon') ?>&hellip;</a>
             </aside>
         </div>
     </div>
