@@ -16,7 +16,6 @@ $specs = get_terms([
         <div class="row column">
             <div class="lead">
                 <?php the_content(); ?>
-                <p><a href="<?php the_permalink(4990485); ?>" class="button">Let's get started</a></p>
             </div>
         </div>
     </div>

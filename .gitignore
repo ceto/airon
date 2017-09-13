@@ -6,4 +6,6 @@ node_modules
 npm-debug.log
 vendor
 dploy.yaml
+.rev
+
 

@@ -3,42 +3,34 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2017-09-13 09:28+0000\n"
+"POT-Creation-Date: 2017-09-13 10:07+0000\n"
 "Language: \n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: front-page.php:22
-msgid "Providing Business Services"
-msgstr ""
-
-#: front-page.php:42 templates/mobilecanvas.php:2
-msgid "Specs & Services"
-msgstr ""
-
-#: front-page.php:72
-msgid "Show"
-msgstr ""
-
-#: front-page.php:72 lib/customposts.php:15
-msgid "Services"
-msgstr ""
-
-#: front-page.php:90
-msgid "From Our Blog"
-msgstr ""
-
 #: 404.php:5
 msgid "Sorry, but the page you were trying to view does not exist."
 msgstr ""
 
-#. Name of the template
-msgid "Contact Template"
+#: front-page.php:22
+msgid "Providing Business Services"
 msgstr ""
 
-#: template-contact.php:38
-msgid "show on map"
+#: front-page.php:39 templates/mobilecanvas.php:2
+msgid "Specs & Services"
+msgstr ""
+
+#: front-page.php:69
+msgid "Show"
+msgstr ""
+
+#: front-page.php:69 lib/customposts.php:15
+msgid "Services"
+msgstr ""
+
+#: front-page.php:87
+msgid "From Our Blog"
 msgstr ""
 
 #: functions.php:26
@@ -46,8 +38,20 @@ msgstr ""
 msgid "Error locating %s for inclusion"
 msgstr ""
 
+#: single-service.php:21
+msgid "Our Expert is here to help You"
+msgstr ""
+
+#: single-service.php:38
+msgid "Ask a Question"
+msgstr ""
+
 #. Name of the template
-msgid "The Team Template"
+msgid "Contact Template"
+msgstr ""
+
+#: template-contact.php:37
+msgid "show on map"
 msgstr ""
 
 #. Name of the template
@@ -58,8 +62,8 @@ msgstr ""
 msgid "Submit form"
 msgstr ""
 
-#: lib/extras.php:31
-msgid "Continued"
+#. Name of the template
+msgid "The Team Template"
 msgstr ""
 
 #: lib/customposts.php:9
@@ -440,6 +444,10 @@ msgstr ""
 msgid "Testimonial Description"
 msgstr ""
 
+#: lib/extras.php:31
+msgid "Continued"
+msgstr ""
+
 #: lib/setup.php:30
 msgid "Primary Navigation"
 msgstr ""
@@ -472,20 +480,28 @@ msgstr ""
 msgid "Category"
 msgstr ""
 
-#: templates/promoservice.php:6
-msgid "Learn more about"
+#: templates/mobilecanvas.php:8
+msgid "See also"
 msgstr ""
 
 #: templates/partners.php:12
 msgid "Proud to be partner with"
 msgstr ""
 
+#: templates/promoservice.php:6
+msgid "Learn more about"
+msgstr ""
+
+#: templates/promoservice.php:7
+msgid "<em>our</em> Services related"
+msgstr ""
+
 #: templates/relposts.php:4
 msgid "Related posts"
 msgstr ""
 
-#: templates/mobilecanvas.php:8
-msgid "See also"
+#: templates/relposts.php:14
+msgid "See all posts"
 msgstr ""
 
 #: templates/testimonials.php:3

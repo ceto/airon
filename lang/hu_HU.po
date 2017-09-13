@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2017-09-13 09:28+0000\n"
+"POT-Creation-Date: 2017-09-13 10:08+0000\n"
 "Language: hu-HU\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
-"PO-Revision-Date: 2017-09-13 09:35+0000\n"
+"PO-Revision-Date: 2017-09-13 10:11+0000\n"
 "X-Generator: Loco - https://localise.biz/\n"
 "Project-Id-Version: Airon Theme\n"
 "Report-Msgid-Bugs-To: \n"
@@ -13,58 +13,34 @@ msgstr ""
 "Language-Team: Hungarian\n"
 "MIME-Version: 1.0"
 
-#: front-page.php:22
-msgid "Providing Business Services"
-msgstr "Üzleti szolgáltatásokat kínálunk"
-
-#: front-page.php:42 templates/mobilecanvas.php:2
-msgid "Specs & Services"
-msgstr "Szakterületetek és Szolgáltatások"
-
-#: front-page.php:72
-msgid "Show"
-msgstr "Mutasd"
-
-#: front-page.php:72 lib/customposts.php:15
-msgid "Services"
-msgstr "Szolgáltatások"
-
-#: front-page.php:90
-msgid "From Our Blog"
-msgstr "Blogon írtuk"
-
 #: 404.php:5
 msgid "Sorry, but the page you were trying to view does not exist."
 msgstr ""
-
-#. Name of the template
-msgid "Contact Template"
-msgstr ""
-
-#: template-contact.php:38
-msgid "show on map"
-msgstr "mutasd a térképen"
 
 #: functions.php:26
 #, php-format
 msgid "Error locating %s for inclusion"
 msgstr ""
 
+#: single-service.php:21
+msgid "Our Expert is here to help You"
+msgstr "Szakértőnk segít Önnek"
+
+#: single-service.php:38
+msgid "Ask a Question"
+msgstr "Kérdezzen"
+
 #. Name of the template
-msgid "The Team Template"
+msgid "Contact Template"
 msgstr ""
 
 #. Name of the template
 msgid "Contact Form Template"
 msgstr ""
 
-#: template-contactform.php:43
-msgid "Submit form"
-msgstr "Elkűldöm az űrlapot"
-
-#: lib/extras.php:31
-msgid "Continued"
-msgstr "Tovább"
+#. Name of the template
+msgid "The Team Template"
+msgstr ""
 
 #: lib/customposts.php:9
 msgctxt "Service General Name"
@@ -79,10 +55,6 @@ msgstr ""
 #: lib/customposts.php:11
 msgid "Airon"
 msgstr ""
-
-#: lib/customposts.php:12 lib/customposts.php:36
-msgid "Service"
-msgstr "Szolgáltatás"
 
 #: lib/customposts.php:13
 msgid "Service Archives"
@@ -464,37 +436,13 @@ msgstr ""
 msgid "Mobile Off-Canvas"
 msgstr ""
 
-#: templates/content-single.php:13
-msgid "Author"
-msgstr "Szerző"
+#: templates/promoservice.php:7
+msgid "<em>our</em> Services related"
+msgstr "<em>kapcsolódó</em> Szolgáltatások"
 
-#: templates/content-single.php:15
-msgid "Date"
-msgstr "Dátum"
-
-#: templates/content-single.php:17
-msgid "Category"
-msgstr "Kategória"
-
-#: templates/promoservice.php:6
-msgid "Learn more about"
-msgstr "Tudjon meg többet"
-
-#: templates/partners.php:12
-msgid "Proud to be partner with"
-msgstr "Büszkék vagyunk partnereinkre"
-
-#: templates/relposts.php:4
-msgid "Related posts"
-msgstr "Kapcsolódó írások"
-
-#: templates/mobilecanvas.php:8
-msgid "See also"
-msgstr "Nézd meg még"
-
-#: templates/testimonials.php:3
-msgid "Recommendations by Our clients"
-msgstr "Ügyfél ajánlások"
+#: templates/relposts.php:14
+msgid "See all posts"
+msgstr "Mutasd mindet"
 
 #. Name of the theme
 msgid "Airon Theme"
@@ -517,3 +465,71 @@ msgstr ""
 #. Author URI of the theme
 msgid "https://hydrogene.hu/"
 msgstr ""
+
+#: front-page.php:22
+msgid "Providing Business Services"
+msgstr "Üzleti szolgáltatásokat kínálunk"
+
+#: front-page.php:39 templates/mobilecanvas.php:2
+msgid "Specs & Services"
+msgstr "Szakterületetek és Szolgáltatások"
+
+#: front-page.php:69
+msgid "Show"
+msgstr "Mutasd"
+
+#: front-page.php:69 lib/customposts.php:15
+msgid "Services"
+msgstr "Szolgáltatások"
+
+#: front-page.php:87
+msgid "From Our Blog"
+msgstr "Blogon írtuk"
+
+#: template-contact.php:37
+msgid "show on map"
+msgstr "mutasd a térképen"
+
+#: template-contactform.php:43
+msgid "Submit form"
+msgstr "Elkűldöm az űrlapot"
+
+#: lib/customposts.php:12 lib/customposts.php:36
+msgid "Service"
+msgstr "Szolgáltatás"
+
+#: lib/extras.php:31
+msgid "Continued"
+msgstr "Tovább"
+
+#: templates/content-single.php:13
+msgid "Author"
+msgstr "Szerző"
+
+#: templates/content-single.php:15
+msgid "Date"
+msgstr "Dátum"
+
+#: templates/content-single.php:17
+msgid "Category"
+msgstr "Kategória"
+
+#: templates/mobilecanvas.php:8
+msgid "See also"
+msgstr "Nézd meg még"
+
+#: templates/partners.php:12
+msgid "Proud to be partner with"
+msgstr "Büszkék vagyunk partnereinkre"
+
+#: templates/promoservice.php:6
+msgid "Learn more about"
+msgstr "Tudjon meg többet"
+
+#: templates/relposts.php:4
+msgid "Related posts"
+msgstr "Kapcsolódó írások"
+
+#: templates/testimonials.php:3
+msgid "Recommendations by Our clients"
+msgstr "Ügyfél ajánlások"

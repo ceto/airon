@@ -18,7 +18,7 @@
         <div class="columns tablet-4 ps ps--narrow">
             <aside class="sidebar sidebar--service">
                 <section class="callexpert">
-                    <h3 class="callexpert__title">Our Expert is here to help You</h3>
+                    <h3 class="callexpert__title"><?= __('Our Expert is here to help You','airon') ?></h3>
                     <?php $themembers = get_field('contactmember'); ?>
                     <?php foreach ($themembers as $key => $post) : ?>
                     <?php setup_postdata( $post ); ?>
@@ -35,7 +35,7 @@
                     </div>
                     <?php endforeach; ?>
                     <?php wp_reset_postdata(); ?>
-                    <a href="<?php the_permalink(4990485); ?>" class="button medium expanded">Ask a Question</a>
+                    <a href="<?php the_permalink(4990485); ?>" class="button medium expanded"><?= __('Ask a Question','airon'); ?></a>
                 </section>
             </aside>
         </div>

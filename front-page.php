@@ -27,13 +27,10 @@ $specs = get_terms([
 
 <div class="wrapper wrapper--narrow ps ps--wide">
     <div class="row column">
-
             <h2><?php the_title() ?></h2>
             <div class="lead">
                 <?php the_content(); ?>
-                <br><a href="<?php the_permalink(4990490); ?>" class="button">Meet the team</a>
             </div>
-
     </div>
 </div>
 <div class="homespecs ps ps--narrow ps--dark">
