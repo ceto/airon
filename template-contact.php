@@ -41,7 +41,7 @@ $specs = get_terms([
         </div>
     </div>
     <div class="container">
-        <img class="" src="http://placehold.it/1800x600/?text=Google+Map" alt="Co. logo">
+        <!-- <img class="" src="http://placehold.it/1800x600/?text=Google+Map" alt="Co. logo"> -->
     </div>
 
 <?php endwhile; ?>

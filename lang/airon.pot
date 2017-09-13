@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2017-09-13 10:07+0000\n"
+"POT-Creation-Date: 2017-09-13 10:44+0000\n"
 "Language: \n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -33,6 +33,10 @@ msgstr ""
 msgid "From Our Blog"
 msgstr ""
 
+#: front-page.php:89 templates/relposts.php:14
+msgid "See all posts"
+msgstr ""
+
 #: functions.php:26
 #, php-format
 msgid "Error locating %s for inclusion"
@@ -56,6 +60,46 @@ msgstr ""
 
 #. Name of the template
 msgid "Contact Form Template"
+msgstr ""
+
+#: template-contactform.php:12
+msgid "There are some errors in your form."
+msgstr ""
+
+#: template-contactform.php:15 template-contactform.php:16
+msgid "Full name*"
+msgstr ""
+
+#: template-contactform.php:18
+msgid "Name is required!"
+msgstr ""
+
+#: template-contactform.php:22
+msgid "Business name"
+msgstr ""
+
+#: template-contactform.php:23
+msgid "Business name*"
+msgstr ""
+
+#: template-contactform.php:26 template-contactform.php:27
+msgid "E-mail address*"
+msgstr ""
+
+#: template-contactform.php:29
+msgid "E-mail is required!"
+msgstr ""
+
+#: template-contactform.php:33 template-contactform.php:34
+msgid "Phone*"
+msgstr ""
+
+#: template-contactform.php:36
+msgid "Phone is required!"
+msgstr ""
+
+#: template-contactform.php:40 template-contactform.php:41
+msgid "How can we help?"
 msgstr ""
 
 #: template-contactform.php:43
@@ -498,10 +542,6 @@ msgstr ""
 
 #: templates/relposts.php:4
 msgid "Related posts"
-msgstr ""
-
-#: templates/relposts.php:14
-msgid "See all posts"
 msgstr ""
 
 #: templates/testimonials.php:3

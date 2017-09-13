@@ -9,36 +9,36 @@
         <?php the_content(); ?>
         <form data-abide novalidate>
             <p data-abide-error class="abide-formerror" style="display: none;">
-                There are some errors in your form.
+                <?= _e('There are some errors in your form.', 'airon') ?>
             </p>
             <label class="smartlabel">
-                <input type="text" placeholder="Full name*" aria-describedby="exampleHelpText" required>
-                <span class="smartlabel__text">Full name*</span>
+                <input type="text" placeholder="<?= _e('Full name*', 'airon') ?>" required>
+                <span class="smartlabel__text"><?= _e('Full name*', 'airon') ?></span>
                 <span class="form-error">
-                    Name is required!
+                    <?= _e('Name is required!', 'airon') ?>
                 </span>
             </label>
             <label class="smartlabel">
-                <input type="text" placeholder="Business name" aria-describedby="exampleHelpText">
-                <span class="smartlabel__text">Business name*</span>
+                <input type="text" placeholder="<?= _e('Business name', 'airon') ?>">
+                <span class="smartlabel__text"><?= _e('Business name*', 'airon') ?></span>
             </label>
             <label class="smartlabel">
-                <input type="email" id="password" placeholder="E-mail address*" aria-describedby="exampleHelpText" required pattern="email">
-                <span class="smartlabel__text">E-mail address*</span>
+                <input type="email" id="password" placeholder="<?= _e('E-mail address*', 'airon') ?>" required pattern="email">
+                <span class="smartlabel__text"><?= _e('E-mail address*', 'airon') ?></span>
                 <span class="form-error">
-                    E-mail is required!
+                    <?= _e('E-mail is required!', 'airon') ?>
                 </span>
             </label>
             <label class="smartlabel">
-                <input type="email" id="password" placeholder="Phone*" aria-describedby="exampleHelpText" required >
-                <span class="smartlabel__text">Phone*</span>
+                <input type="email" id="password" placeholder="<?= _e('Phone*', 'airon') ?>" required >
+                <span class="smartlabel__text"><?= _e('Phone*', 'airon') ?></span>
                 <span class="form-error">
-                    Phone is required!
+                    <?= _e('Phone is required!', 'airon') ?>
                 </span>
             </label>
             <label class="smartlabel">
-                <textarea name="message" id="" rows="7" placeholder="How can we help?"></textarea>
-                <span class="smartlabel__text">How can we help?</span>
+                <textarea name="message" id="" rows="7" placeholder="<?= _e('How can we help?', 'airon') ?>"></textarea>
+                <span class="smartlabel__text"><?= _e('How can we help?', 'airon') ?></span>
             </label>
             <button class="button large expanded" type="submit"><?= _e('Submit form', 'airon') ?></button>
         </form>
