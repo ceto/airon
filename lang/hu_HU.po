@@ -5,7 +5,7 @@ msgstr ""
 "POT-Creation-Date: 2017-09-13 10:08+0000\n"
 "Language: hu-HU\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
-"PO-Revision-Date: 2017-09-13 10:14+0000\n"
+"PO-Revision-Date: 2017-09-13 10:15+0000\n"
 "X-Generator: Loco - https://localise.biz/\n"
 "Project-Id-Version: Airon Theme\n"
 "Report-Msgid-Bugs-To: \n"
@@ -438,7 +438,7 @@ msgstr ""
 
 #: templates/promoservice.php:7
 msgid "<em>our</em> Services related"
-msgstr "<em>a</em>Szolgáltatásokról"
+msgstr "<em>a</em> Szolgáltatásokról"
 
 #: templates/relposts.php:14
 msgid "See all posts"
