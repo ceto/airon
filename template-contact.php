@@ -34,7 +34,8 @@ $specs = get_terms([
                         Tel.: <a href="tel:<?= get_field( 'tel', 'specialization_'.$speci->term_id ) ?>"><?= get_field( 'tel', 'specialization_'.$speci->term_id ) ?></a><br>
                         E-mail: <a href="mailto:<?= get_field( 'email', 'specialization_'.$speci->term_id ) ?>"><?= get_field( 'email', 'specialization_'.$speci->term_id ) ?></a>
                     </p>
-                    <p><small><a href="#"><?= __('show on map','airon') ?></a></small></p>
+                    <?php $thefulladdress = get_field( 'zip', 'specialization_'.$speci->term_id ).' '.get_field( 'city', 'specialization_'.$speci->term_id ).' '.get_field( 'address', 'specialization_'.$speci->term_id ) ;  ?>
+                    <p><small><a target="_blank" href="http://maps.google.com/maps?q=<?= urlencode($thefulladdress); ?>"><?= __('show on map','airon') ?></a></small></p>
                 </section>
             </div>
             <?php endforeach; ?>
