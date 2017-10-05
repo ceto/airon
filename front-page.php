@@ -9,10 +9,10 @@ $specs = get_terms([
 <section class="hero">
     <div class="hero__content container">
         <img class="hero__logo" src="<?= get_stylesheet_directory_uri(); ?>/dist/images/logostar.svg" alt="Airon">
-        <h3 class="hero__title">Company lorem foundation services ipsum in Hungary</h3>
-        <p class="hero__lead">Cnsectetur adipisicing elit. Tenetur temporibus nisi optio.</p>
-        <div class="hero__actions">
-            <a href="#" class="button hollow blank">Jump to page</a>
+        <h3 class="hero__title"><?= __('We Solve.', 'airon') ?></h3>
+        <p class="hero__lead"><?= __('Comprehensive Business Services in Hungary.', 'airon') ?></p>
+        <div class="hero__actions" data-magellan>
+            <a href="#homecontent" class="hero__action"><?= __('Learn more', 'airon') ?>&hellip;</a>
         </div>
     </div>
 </section>
@@ -25,7 +25,7 @@ $specs = get_terms([
     </div>
 </div>
 
-<div class="wrapper wrapper--narrow ps ps--wide">
+<div id="homecontent" class="wrapper wrapper--narrow ps ps--wide" data-magellan-target="homecontent">
     <div class="row column">
             <h2><?php the_title() ?></h2>
             <div class="lead">

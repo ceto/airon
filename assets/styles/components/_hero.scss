@@ -30,30 +30,54 @@
 .hero__logo {
   width:4rem;
   margin-bottom: 1rem;
-  @include breakpoint(large) {
-    width:6.5rem;
-    margin-bottom: 2rem;
+  @include breakpoint(tablet) {
+    width:4.5rem;
+    //margin-bottom: 2rem;
+  }
+  @include breakpoint(xxlarge) {
+    width:6rem;
+    margin-bottom: 1.5rem;
   }
 }
 .hero__title {
-  font-size: 1.333rem;
+  font-size: 1.875rem;
   font-family: $body-font-family;
   font-weight: $global-weight-normal;
-  @include breakpoint(large) {
+  @include breakpoint(tablet) {
     font-size: 2.75rem;
+  }
+  @include breakpoint(xxlarge) {
+    font-size: 4rem;
   }
 }
 .hero__lead {
-  font-size: 1rem;
-  @include breakpoint(large) {
-    font-size: 1.25rem;
+  font-size: .875rem;
+  @include breakpoint(tablet) {
+    font-size: 1rem;
+  }
+  @include breakpoint(xxlarge) {
+    font-size: 1.5rem;
   }
 }
 .hero__actions {
   margin-top: 2.5rem;
 }
 
-
+.hero__action {
+  color:inherit;
+  line-height: 1;
+  // display: inline-block;
+  // padding:.5em 1em;
+  // border:1px solid currentColor;
+  font-size: .75rem;
+  //font-style: italic;
+  &:hover, &:focus {
+    color:inherit;
+  }
+  @include breakpoint(xxlarge) {
+    font-size: 1rem;
+  }
+}
 
 
 .hero--bigcontent {

@@ -29,3 +29,13 @@ function airon_mime_types($mimes) {
 add_filter('upload_mimes', 'airon_mime_types');
 
 //add_post_type_support( 'post', 'excerpt' );
+
+add_action( 'pre_get_posts', 'airon_spectax_order' );
+function airon_spectax_order ( $query ) {
+  if (($query->is_main_query()) && (is_tax('specialization'))){
+
+      $query->set( 'posts_per_page', '-1' );
+      $query->set( 'orderby', 'menu_order' );
+      $query->set( 'order', 'ASC' );
+  }
+}
