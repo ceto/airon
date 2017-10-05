@@ -3,14 +3,30 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2017-09-13 10:49+0000\n"
+"POT-Creation-Date: 2017-10-05 12:04+0000\n"
 "Language: \n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: 404.php:5
-msgid "Sorry, but the page you were trying to view does not exist."
+#: single-service.php:21
+msgid "Our Expert is here to help You"
+msgstr ""
+
+#: single-service.php:38
+msgid "Ask a Question"
+msgstr ""
+
+#: front-page.php:12
+msgid "We Solve."
+msgstr ""
+
+#: front-page.php:13
+msgid "Comprehensive Business Services in Hungary."
+msgstr ""
+
+#: front-page.php:15
+msgid "Learn more"
 msgstr ""
 
 #: front-page.php:22
@@ -37,25 +53,25 @@ msgstr ""
 msgid "See all posts"
 msgstr ""
 
-#: functions.php:26
-#, php-format
-msgid "Error locating %s for inclusion"
-msgstr ""
-
-#: single-service.php:21
-msgid "Our Expert is here to help You"
-msgstr ""
-
-#: single-service.php:38
-msgid "Ask a Question"
+#: 404.php:5
+msgid "Sorry, but the page you were trying to view does not exist."
 msgstr ""
 
 #. Name of the template
 msgid "Contact Template"
 msgstr ""
 
-#: template-contact.php:37
+#: template-contact.php:38
 msgid "show on map"
+msgstr ""
+
+#: functions.php:26
+#, php-format
+msgid "Error locating %s for inclusion"
+msgstr ""
+
+#. Name of the template
+msgid "The Team Template"
 msgstr ""
 
 #. Name of the template
@@ -106,8 +122,8 @@ msgstr ""
 msgid "Submit form"
 msgstr ""
 
-#. Name of the template
-msgid "The Team Template"
+#: lib/extras.php:31
+msgid "Continued"
 msgstr ""
 
 #: lib/customposts.php:9
@@ -488,10 +504,6 @@ msgstr ""
 msgid "Testimonial Description"
 msgstr ""
 
-#: lib/extras.php:31
-msgid "Continued"
-msgstr ""
-
 #: lib/setup.php:30
 msgid "Primary Navigation"
 msgstr ""
@@ -524,22 +536,6 @@ msgstr ""
 msgid "Category"
 msgstr ""
 
-#: templates/homedivi.php:3
-msgid "<em>for</em> Corporate clients"
-msgstr ""
-
-#: templates/homedivi.php:22
-msgid "<em>for</em> Private clients"
-msgstr ""
-
-#: templates/mobilecanvas.php:8
-msgid "See also"
-msgstr ""
-
-#: templates/partners.php:12
-msgid "Proud to be partner with"
-msgstr ""
-
 #: templates/promoservice.php:6
 msgid "Learn more about"
 msgstr ""
@@ -548,8 +544,24 @@ msgstr ""
 msgid "<em>our</em> Services related"
 msgstr ""
 
+#: templates/partners.php:12
+msgid "Proud to be partner with"
+msgstr ""
+
+#: templates/homedivi.php:3
+msgid "<em>for</em> Corporate clients"
+msgstr ""
+
+#: templates/homedivi.php:22
+msgid "<em>for</em> Private clients"
+msgstr ""
+
 #: templates/relposts.php:4
 msgid "Related posts"
+msgstr ""
+
+#: templates/mobilecanvas.php:8
+msgid "See also"
 msgstr ""
 
 #: templates/testimonials.php:3

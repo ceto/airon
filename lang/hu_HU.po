@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2017-09-13 10:50+0000\n"
+"POT-Creation-Date: 2017-10-05 12:04+0000\n"
 "Language: hu-HU\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
-"PO-Revision-Date: 2017-09-13 10:51+0000\n"
+"PO-Revision-Date: 2017-10-05 12:07+0000\n"
 "X-Generator: Loco - https://localise.biz/\n"
 "Project-Id-Version: Airon Theme\n"
 "Report-Msgid-Bugs-To: \n"
@@ -17,13 +17,17 @@ msgstr ""
 msgid "Sorry, but the page you were trying to view does not exist."
 msgstr ""
 
+#. Name of the template
+msgid "Contact Template"
+msgstr ""
+
 #: functions.php:26
 #, php-format
 msgid "Error locating %s for inclusion"
 msgstr ""
 
 #. Name of the template
-msgid "Contact Template"
+msgid "The Team Template"
 msgstr ""
 
 #. Name of the template
@@ -32,10 +36,6 @@ msgstr ""
 
 #: template-contactform.php:12
 msgid "There are some errors in your form."
-msgstr ""
-
-#. Name of the template
-msgid "The Team Template"
 msgstr ""
 
 #: lib/customposts.php:9
@@ -432,14 +432,6 @@ msgstr ""
 msgid "Mobile Off-Canvas"
 msgstr ""
 
-#: templates/homedivi.php:3
-msgid "<em>for</em> Corporate clients"
-msgstr "Céges <em>ügyfeleknek</em>"
-
-#: templates/homedivi.php:22
-msgid "<em>for</em> Private clients"
-msgstr "Magánszemélyek <em>részére</em>"
-
 #. Name of the theme
 msgid "Airon Theme"
 msgstr ""
@@ -461,6 +453,26 @@ msgstr ""
 #. Author URI of the theme
 msgid "https://hydrogene.hu/"
 msgstr ""
+
+#: front-page.php:12
+msgid "We Solve."
+msgstr "We Solve."
+
+#: front-page.php:13
+msgid "Comprehensive Business Services in Hungary."
+msgstr "Átfogó Üzleti Szolgáltatások."
+
+#: front-page.php:15
+msgid "Learn more"
+msgstr "Bővebben"
+
+#: single-service.php:21
+msgid "Our Expert is here to help You"
+msgstr "Szakértőnk segít Önnek"
+
+#: single-service.php:38
+msgid "Ask a Question"
+msgstr "Kérdezzen"
 
 #: front-page.php:22
 msgid "Providing Business Services"
@@ -486,15 +498,7 @@ msgstr "Blogon írtuk"
 msgid "See all posts"
 msgstr "Mutasd mindet"
 
-#: single-service.php:21
-msgid "Our Expert is here to help You"
-msgstr "Szakértőnk segít Önnek"
-
-#: single-service.php:38
-msgid "Ask a Question"
-msgstr "Kérdezzen"
-
-#: template-contact.php:37
+#: template-contact.php:38
 msgid "show on map"
 msgstr "mutasd a térképen"
 
@@ -538,13 +542,13 @@ msgstr "Miben segíthetünk?"
 msgid "Submit form"
 msgstr "Elkűldöm az űrlapot"
 
-#: lib/customposts.php:12 lib/customposts.php:36
-msgid "Service"
-msgstr "Szolgáltatás"
-
 #: lib/extras.php:31
 msgid "Continued"
 msgstr "Tovább"
+
+#: lib/customposts.php:12 lib/customposts.php:36
+msgid "Service"
+msgstr "Szolgáltatás"
 
 #: templates/content-single.php:13
 msgid "Author"
@@ -558,14 +562,6 @@ msgstr "Dátum"
 msgid "Category"
 msgstr "Kategória"
 
-#: templates/mobilecanvas.php:8
-msgid "See also"
-msgstr "Nézd meg még"
-
-#: templates/partners.php:12
-msgid "Proud to be partner with"
-msgstr "Büszkék vagyunk partnereinkre"
-
 #: templates/promoservice.php:6
 msgid "Learn more about"
 msgstr "Tudjon meg többet"
@@ -574,9 +570,25 @@ msgstr "Tudjon meg többet"
 msgid "<em>our</em> Services related"
 msgstr "<em>a</em> Szolgáltatásokról"
 
+#: templates/partners.php:12
+msgid "Proud to be partner with"
+msgstr "Büszkék vagyunk partnereinkre"
+
+#: templates/homedivi.php:3
+msgid "<em>for</em> Corporate clients"
+msgstr "Céges <em>ügyfeleknek</em>"
+
+#: templates/homedivi.php:22
+msgid "<em>for</em> Private clients"
+msgstr "Magánszemélyek <em>részére</em>"
+
 #: templates/relposts.php:4
 msgid "Related posts"
 msgstr "Kapcsolódó írások"
+
+#: templates/mobilecanvas.php:8
+msgid "See also"
+msgstr "Továbbá"
 
 #: templates/testimonials.php:3
 msgid "Recommendations by Our clients"
