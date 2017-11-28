@@ -1,7 +1,7 @@
 <?php if ( !is_page_template('template-contactform.php') ) :?>
 <footer class="sitefooter" role="contentinfo">
-    <div class="container">
-        <div class="sitefooter__top column row">
+    <div class="">
+        <div class="sitefooter__top column row expanded">
             <a href="<?= esc_url(home_url('/')); ?>">
                 <img class="footerlogo" src="<?= get_stylesheet_directory_uri(); ?>/dist/images/logostar.svg" alt="Airon">
             </a>

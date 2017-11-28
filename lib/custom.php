@@ -13,10 +13,13 @@
   }
 
   // 3. Hide ACF field group menu item
-  //add_filter('acf/settings/show_admin', '__return_false');
+  add_filter('acf/settings/show_admin', '__return_false');
 
   // 4. Include ACF
   include_once( get_stylesheet_directory() . '/lib/acf/acf.php' );
+
+  // 5 Generated fields include
+  include_once( get_stylesheet_directory() . '/lib/acfdefs.php' );
 
   function speccolor($spec_id) {
     return '#'.get_field( 'color', 'specialization_'.$spec_id );
