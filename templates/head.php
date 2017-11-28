@@ -11,5 +11,5 @@
   <link rel="mask-icon" href="<?= get_stylesheet_directory_uri(); ?>/dist/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="shortcut icon" href="<?= get_stylesheet_directory_uri(); ?>/dist/images/favicons/favicon.ico">
   <meta name="msapplication-config" content="<?= get_stylesheet_directory_uri(); ?>/dist/images/favicons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#231F20">
 </head>
