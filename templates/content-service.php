@@ -5,4 +5,5 @@
     <div class="hentry__summary">
         <?php the_excerpt(); ?>
     </div>
+    <a class="readmore" href="<?php the_permalink(); ?>"><?= __('Learn more','airon'); ?></a>
 </article>

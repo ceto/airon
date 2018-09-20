@@ -57,7 +57,10 @@ fill: <?= speccolor($speci->term_id) ?>;
 .menu--main .active > a:before,
 .menu--mobile .active > a:before,
 .footer__specilist .active>a:after,
-.scrollmenu .active > a {
+.scrollmenu .active > a,
+.content a,
+.pagehead__title a:hover,
+.pagehead__title a:focus {
 color: <?= speccolor($speci->term_id) ?>;
 }
 .menutoggler:after {

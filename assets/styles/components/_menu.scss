@@ -11,6 +11,11 @@
     > a {
       color:inherit;
       position: relative;
+      white-space: nowrap;
+      padding:.7rem .5rem;
+      @include breakpoint(xlarge) {
+        padding: $menu-item-padding;
+      }
       &:before {
           font-weight: $global-weight-bold;
           content:'. ';

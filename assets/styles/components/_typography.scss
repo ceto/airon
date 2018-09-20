@@ -21,7 +21,11 @@ h1,h2,h3,h4,h5,h6 {
 
 .button {
   //font-weight: $global-weight-semibold;
+  font-family: $body-font-family;
   text-transform: uppercase;
+  &:hover,&:focus {
+      text-decoration: none;
+  }
 }
 input, textarea {
     // Placeholder text
@@ -136,4 +140,24 @@ dl.metadef {
   > dd {
     font-size: .875rem;
   }
+}
+
+.readmore {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: $header-font-family;
+    font-weight: $header-font-weight;
+    font-size: .666em;
+    color: $white;
+    background-color: $dark-gray;
+    padding: .5em .875em;
+    line-height:1.125;
+    &:before {
+        content: '\00bb'+' ';
+    }
+    &:hover,&:focus {
+        text-decoration: none;
+        color: $white;
+        background-color: $black;
+    }
 }

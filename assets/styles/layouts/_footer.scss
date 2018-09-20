@@ -61,13 +61,14 @@
   font-weight: $global-weight-semibold;
   font-family: $header-font-family;
   list-style:none;
-  margin:0 0 3rem;
+  margin:0 auto 3rem;
   padding:0;
+  max-width: 35em;
 
   > li {
     display: inline-block;
     white-space: nowrap;
-    margin:0 .333em;
+    margin:0 .333em .125em;
     //display: block;
     > a {
       text-decoration: none;

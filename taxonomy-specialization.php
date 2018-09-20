@@ -21,13 +21,13 @@
 </div>
 <?php endif; ?>
 <style>
-.pagehead, .ps--inverse, .menu--sec, .menutoggler:after{
+.pagehead, .ps--inverse, .menu--sec, .menutoggler:after, .readmore:hover, .readmore:focus{
 background-color: <?= speccolor(get_queried_object()->term_id) ?>;
 }
 .banner__brand svg #firstletter {
 fill: <?= speccolor(get_queried_object()->term_id) ?>;
 }
-.menu--main .active > a:before, .menu--mobile .active > a:before, .footer__specilist .active>a:after {
+.menu--main .active > a:before, .menu--mobile .active > a:before, .footer__specilist .active>a:after  {
 color: <?= speccolor(get_queried_object()->term_id) ?>;
 }
 .menutoggler:after {
