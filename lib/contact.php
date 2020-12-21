@@ -5,7 +5,7 @@
 if($_POST) {
   $to_Email = "hello@airon.hu";
   $dev_Email = "szabogabor@hydrogene.hu";
-  $to_Email = "szabogabi@gmail.com";
+  // $to_Email = "szabogabi@gmail.com";
   $subject = __('Kapcsolatfelvétel a weboldalon','airon');
   $resp_subject = "Airon - Köszönjük, hogy kapcsolatba lépett velünk! ";
 
