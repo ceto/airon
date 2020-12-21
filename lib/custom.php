@@ -42,3 +42,5 @@ function airon_spectax_order ( $query ) {
       $query->set( 'order', 'ASC' );
   }
 }
+
+add_filter('use_block_editor_for_post', '__return_false', 10);
