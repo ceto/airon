@@ -72,12 +72,12 @@
 
             <label class="checkboxlabel small" for="message_acceptpolicy">
                 <input type="checkbox" id="message_acceptpolicy" name="message_acceptpolicy" required>
-                <?= __('I have read and understood the content of the <a target="_blank" href="https://airon.hu/privacy-statement/">Privacy Policy.</a>', 'viarent'); ?>
+                <?= __('I have read and understood the content of the <a target="_blank" href="https://airon.hu/privacy-statement/">Privacy Policy.</a>', 'airon'); ?>
                 <span class="form-error"><?= _e("It's required.", "airon") ?></span>
             </label>
             <label class="checkboxlabel small" for="message_acceptprocessing">
                 <input type="checkbox" id="message_acceptprocessing" name="message_acceptprocessing" required>
-                <?= __('I agree to the processing of my personal data in accordance with the provisions of the Privacy Policy.', 'viarent'); ?>
+                <?= __('I agree to the processing of my personal data in accordance with the provisions of the Privacy Policy.', 'airon'); ?>
                 <span class="form-error"><?= _e("It's required.", "airon") ?></span>
             </label>
             <div class="formactions text-center">
