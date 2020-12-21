@@ -69,6 +69,17 @@
                     name="message_text"><?php if ($_POST['message_text']!='') { echo $_POST['message_text']; }?></textarea>
                 <span class="smartlabel__text"><?= _e('How can we help?', 'airon') ?></span>
             </label>
+
+            <label class="checkboxlabel small" for="message_acceptpolicy">
+                <input type="checkbox" id="message_acceptpolicy" name="message_acceptpolicy" required>
+                <?= __('I have read and understood the content of the <a target="_blank" href="https://airon.hu/privacy-statement/">Privacy Policy.</a>', 'viarent'); ?>
+                <span class="form-error">It's required.</span>
+            </label>
+            <label class="checkboxlabel small" for="message_acceptprocessing">
+                <input type="checkbox" id="message_acceptprocessing" name="message_acceptprocessing" required>
+                <?= __('I agree to the processing of my personal data in accordance with the provisions of the Privacy Policy.', 'viarent'); ?>
+                <span class="form-error">It's required.</span>
+            </label>
             <div class="formactions text-center">
                 <div id="result"></div>
                 <input type="hidden" name="ap_id" value="<?php echo $subjecto; ?>">

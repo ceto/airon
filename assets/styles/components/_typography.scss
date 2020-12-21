@@ -80,6 +80,43 @@ input, textarea {
 
 }
 
+.checkboxlabel {
+  color: #fff;
+  line-height: 1.4;
+  margin:0 0 1.75rem;
+  padding:0 0 0 1.5rem;
+  position: relative;
+  font-size: 1rem;;
+
+
+  & + & {
+    margin-top: -.75rem;
+  }
+  // &.is-invalid-label {
+  //   color: get-color(warning);
+  // }
+
+  input[type="checkbox"] {
+    margin:0 0 0 0;
+    position: absolute;
+    left:0;
+    top:.25em;
+  }
+
+  .form-error {
+    margin-top:.125em;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    &:hover, &:focus {
+      color: get-color(primary);
+      text-decoration: none;
+    }
+  }
+}
+
 
 
 .indentedtitle {

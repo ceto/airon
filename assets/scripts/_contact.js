@@ -12,6 +12,8 @@
     var user_tel = $("input[name=message_tel]").val();
     var user_msg = $("textarea[name=message_text]").val();
     var user_service = $("select[name=message_service]").val();
+    var user_acceptpolicy = $("input[name=message_acceptpolicy]").is(":checked")?1:0;
+    var user_acceptprocessing = $("input[name=message_acceptprocessing]").is(":checked")?1:0;
 
     //var btntext = $("#contact_submit").text();
 
@@ -41,7 +43,9 @@
         userEmail: user_email,
         userTel: user_tel,
         userService: user_service,
-        userMsg: user_msg
+        userMsg: user_msg,
+        acceptpolicy: user_acceptpolicy,
+        acceptprocessing: user_acceptprocessing
       };
       $("#contact_submit").addClass("disabled");
       $("#contact_submit").attr("disabled", "disabled");

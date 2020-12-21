@@ -5,6 +5,7 @@ bower_components
 node_modules
 npm-debug.log
 vendor
+lang/*backup*
 dploy.yaml
 # OS generated files #
 ######################
