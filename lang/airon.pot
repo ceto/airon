@@ -3,66 +3,174 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2017-10-05 12:04+0000\n"
+"POT-Creation-Date: 2021-01-05 10:37+0000\n"
 "Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: Loco - https://localise.biz/"
+"X-Generator: Loco https://localise.biz/"
 
-#: single-service.php:21
-msgid "Our Expert is here to help You"
+#: templates/homedivi.php:3
+msgid "<em>for</em> Corporate clients"
+msgstr ""
+
+#: templates/homedivi.php:22
+msgid "<em>for</em> Private clients"
+msgstr ""
+
+#: templates/promoservice.php:7
+msgid "<em>our</em> Services related"
+msgstr ""
+
+#: lib/customposts.php:68 lib/customposts.php:119 lib/customposts.php:170
+msgid "Add New"
+msgstr ""
+
+#: lib/customposts.php:118
+msgid "Add New Client"
+msgstr ""
+
+#: lib/customposts.php:67
+msgid "Add New Member"
+msgstr ""
+
+#: lib/customposts.php:16
+msgid "Add New Service"
+msgstr ""
+
+#: lib/customposts.php:169
+msgid "Add New Testimonial"
+msgstr ""
+
+#: lib/customposts.php:17
+msgid "Add Service"
+msgstr ""
+
+#: lib/customposts.php:11
+msgid "Airon"
+msgstr ""
+
+#: lib/contact.php:10
+msgid "Airon - Thank you for writing us!"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Airon is a Custom WordPress Theme. <a href=\"https://github.com/ceto/airon\">"
+"Sourcecode is available on GitHub</a>"
+msgstr ""
+
+#. Name of the theme
+msgid "Airon Theme"
 msgstr ""
 
 #: single-service.php:38
 msgid "Ask a Question"
 msgstr ""
 
-#: front-page.php:12
-msgid "We Solve."
+#: templates/content-single.php:13
+msgid "Author"
+msgstr ""
+
+#: template-contactform.php:34
+msgid "Business name"
+msgstr ""
+
+#: template-contactform.php:36
+msgid "Business name*"
+msgstr ""
+
+#: templates/content-single.php:17
+msgid "Category"
+msgstr ""
+
+#: lib/customposts.php:114
+msgid "Client"
+msgstr ""
+
+#: lib/customposts.php:115
+msgid "Client Archives"
+msgstr ""
+
+#: lib/customposts.php:139
+msgid "Client Description"
+msgstr ""
+
+#: lib/customposts.php:111
+msgctxt "Client General Name"
+msgid "Client"
+msgstr ""
+
+#: lib/customposts.php:127
+msgid "Client Photo"
+msgstr ""
+
+#: lib/customposts.php:112
+msgctxt "Client Singular Name"
+msgid "Client"
+msgstr ""
+
+#: lib/customposts.php:113 lib/customposts.php:117 lib/customposts.php:138
+msgid "Clients"
+msgstr ""
+
+#: lib/customposts.php:133
+msgid "Clients list"
+msgstr ""
+
+#: lib/customposts.php:134
+msgid "Clients list navigation"
 msgstr ""
 
 #: front-page.php:13
 msgid "Comprehensive Business Services in Hungary."
 msgstr ""
 
-#: front-page.php:15
-msgid "Learn more"
-msgstr ""
-
-#: front-page.php:22
-msgid "Providing Business Services"
-msgstr ""
-
-#: front-page.php:39 templates/mobilecanvas.php:2
-msgid "Specs & Services"
-msgstr ""
-
-#: front-page.php:69
-msgid "Show"
-msgstr ""
-
-#: front-page.php:69 lib/customposts.php:15
-msgid "Services"
-msgstr ""
-
-#: front-page.php:87
-msgid "From Our Blog"
-msgstr ""
-
-#: front-page.php:89 templates/relposts.php:14
-msgid "See all posts"
-msgstr ""
-
-#: 404.php:5
-msgid "Sorry, but the page you were trying to view does not exist."
+#. Name of the template
+msgid "Contact Form Template"
 msgstr ""
 
 #. Name of the template
 msgid "Contact Template"
 msgstr ""
 
-#: template-contact.php:38
-msgid "show on map"
+#: lib/extras.php:31
+msgid "Continued"
+msgstr ""
+
+#: templates/content-single.php:15
+msgid "Date"
+msgstr ""
+
+#: lib/contact.php:81
+msgid "Dear"
+msgstr ""
+
+#: templates/dlcage.php:3
+msgid "Downloads"
+msgstr ""
+
+#: template-contactform.php:39 template-contactform.php:42
+msgid "E-mail address*"
+msgstr ""
+
+#: template-contactform.php:44
+msgid "E-mail is required!"
+msgstr ""
+
+#: lib/customposts.php:121
+msgid "Edit Client"
+msgstr ""
+
+#: lib/customposts.php:70
+msgid "Edit Member"
+msgstr ""
+
+#: lib/customposts.php:19
+msgid "Edit Service"
+msgstr ""
+
+#: lib/customposts.php:172
+msgid "Edit Testimonial"
 msgstr ""
 
 #: functions.php:26
@@ -70,114 +178,166 @@ msgstr ""
 msgid "Error locating %s for inclusion"
 msgstr ""
 
-#. Name of the template
-msgid "The Team Template"
+#: lib/customposts.php:135
+msgid "Filter Clients list"
 msgstr ""
 
-#. Name of the template
-msgid "Contact Form Template"
+#: lib/customposts.php:84
+msgid "Filter Members list"
 msgstr ""
 
-#: template-contactform.php:12
-msgid "There are some errors in your form."
+#: lib/customposts.php:33
+msgid "Filter Services list"
 msgstr ""
 
-#: template-contactform.php:15 template-contactform.php:16
+#: lib/customposts.php:186
+msgid "Filter Testimonials list"
+msgstr ""
+
+#: lib/setup.php:68
+msgid "Footer"
+msgstr ""
+
+#: front-page.php:87
+msgid "From Our Blog"
+msgstr ""
+
+#: template-contactform.php:26 template-contactform.php:28
 msgid "Full name*"
 msgstr ""
 
-#: template-contactform.php:18
-msgid "Name is required!"
-msgstr ""
-
-#: template-contactform.php:22
-msgid "Business name"
-msgstr ""
-
-#: template-contactform.php:23
-msgid "Business name*"
-msgstr ""
-
-#: template-contactform.php:26 template-contactform.php:27
-msgid "E-mail address*"
-msgstr ""
-
-#: template-contactform.php:29
-msgid "E-mail is required!"
-msgstr ""
-
-#: template-contactform.php:33 template-contactform.php:34
-msgid "Phone*"
-msgstr ""
-
-#: template-contactform.php:36
-msgid "Phone is required!"
-msgstr ""
-
-#: template-contactform.php:40 template-contactform.php:41
+#: template-contactform.php:68 template-contactform.php:70
 msgid "How can we help?"
 msgstr ""
 
-#: template-contactform.php:43
-msgid "Submit form"
+#. URI of the theme
+msgid "http://hydrogene.hu/"
 msgstr ""
 
-#: lib/extras.php:31
-msgid "Continued"
+#. Author URI of the theme
+msgid "https://hydrogene.hu/"
 msgstr ""
 
-#: lib/customposts.php:9
-msgctxt "Service General Name"
-msgid "Services"
+#. Author of the theme
+msgid "Hydrogene"
 msgstr ""
 
-#: lib/customposts.php:10
-msgctxt "Service Singular Name"
-msgid "Service"
+#: template-contactform.php:80
+msgid ""
+"I agree to the processing of my personal data in accordance with the "
+"provisions of the Privacy Policy."
 msgstr ""
 
-#: lib/customposts.php:11
-msgid "Airon"
+#: template-contactform.php:75
+msgid ""
+"I have read and understood the content of the <a target=\"_blank\" "
+"href=\"https://airon.hu/privacy-statement/\">Privacy Policy.</a>"
 msgstr ""
 
-#: lib/customposts.php:12 lib/customposts.php:36
-msgid "Service"
+#: lib/customposts.php:131
+msgid "Insert into Client"
 msgstr ""
 
-#: lib/customposts.php:13
-msgid "Service Archives"
+#: lib/customposts.php:80
+msgid "Insert into Member"
 msgstr ""
 
-#: lib/customposts.php:14
-msgid "Parent Service:"
+#: lib/customposts.php:29
+msgid "Insert into Service"
 msgstr ""
 
-#: lib/customposts.php:16
-msgid "Add New Service"
+#: lib/customposts.php:182
+msgid "Insert into Testimonial"
 msgstr ""
 
-#: lib/customposts.php:17
-msgid "Add Service"
+#: lib/contact.php:45
+msgid "Invalid e-mail address"
+msgstr ""
+
+#: template-contactform.php:76 template-contactform.php:81
+msgid "It's required."
+msgstr ""
+
+#: lib/contact.php:9
+msgid "Kapcsolatfelvétel a weboldalon"
+msgstr ""
+
+#: front-page.php:15 templates/content-service.php:8 templates/content.php:11
+msgid "Learn more"
+msgstr ""
+
+#: templates/promoservice.php:6
+msgid "Learn more about"
+msgstr ""
+
+#: lib/customposts.php:63
+msgid "Member"
+msgstr ""
+
+#: lib/customposts.php:64
+msgid "Member Archives"
+msgstr ""
+
+#: lib/customposts.php:88
+msgid "Member Description"
+msgstr ""
+
+#: lib/customposts.php:60
+msgctxt "Member General Name"
+msgid "Member"
+msgstr ""
+
+#: lib/customposts.php:76
+msgid "Member Photo"
+msgstr ""
+
+#: lib/customposts.php:61
+msgctxt "Member Singular Name"
+msgid "Member"
+msgstr ""
+
+#: lib/customposts.php:62 lib/customposts.php:66 lib/customposts.php:87
+msgid "Members"
+msgstr ""
+
+#: lib/customposts.php:82
+msgid "Members list"
+msgstr ""
+
+#: lib/customposts.php:83
+msgid "Members list navigation"
+msgstr ""
+
+#: lib/contact.php:73
+msgid "Message not sent. Please call us by phone or send e-mail!"
+msgstr ""
+
+#: lib/contact.php:24
+msgid "Missing field required"
+msgstr ""
+
+#: lib/setup.php:77
+msgid "Mobile Off-Canvas"
+msgstr ""
+
+#: template-contactform.php:30
+msgid "Name is required!"
+msgstr ""
+
+#: lib/customposts.php:120
+msgid "New Client"
+msgstr ""
+
+#: lib/customposts.php:69
+msgid "New Member"
 msgstr ""
 
 #: lib/customposts.php:18
 msgid "New Service"
 msgstr ""
 
-#: lib/customposts.php:19
-msgid "Edit Service"
-msgstr ""
-
-#: lib/customposts.php:20
-msgid "Update Service"
-msgstr ""
-
-#: lib/customposts.php:21
-msgid "View Service"
-msgstr ""
-
-#: lib/customposts.php:22
-msgid "Search Service"
+#: lib/customposts.php:171
+msgid "New Testimonial"
 msgstr ""
 
 #: lib/customposts.php:23 lib/customposts.php:74 lib/customposts.php:125
@@ -190,28 +350,134 @@ msgstr ""
 msgid "Not found in Trash"
 msgstr ""
 
-#: lib/customposts.php:25
-msgid "Service Photo"
+#: single-service.php:21
+msgid "Our Expert is here to help You"
 msgstr ""
 
-#: lib/customposts.php:26
-msgid "Set Service photo"
+#: lib/customposts.php:116
+msgid "Parent Client:"
+msgstr ""
+
+#: lib/customposts.php:65
+msgid "Parent Member:"
+msgstr ""
+
+#: lib/customposts.php:14
+msgid "Parent Service:"
+msgstr ""
+
+#: lib/customposts.php:167
+msgid "Parent Testimonial:"
+msgstr ""
+
+#: template-contactform.php:52
+msgid "Phone is required!"
+msgstr ""
+
+#: template-contactform.php:49 template-contactform.php:50
+msgid "Phone*"
+msgstr ""
+
+#: lib/contact.php:41
+msgid "Please add your name"
+msgstr ""
+
+#: lib/setup.php:59
+msgid "Primary"
+msgstr ""
+
+#: lib/setup.php:30
+msgid "Primary Navigation"
+msgstr ""
+
+#: templates/partners.php:12
+msgid "Proud to be partner with"
+msgstr ""
+
+#: front-page.php:22
+msgid "Providing Business Services"
+msgstr ""
+
+#: templates/testimonials.php:3
+msgid "Recommendations by Our clients"
+msgstr ""
+
+#: templates/relposts.php:4
+msgid "Related posts"
+msgstr ""
+
+#: lib/customposts.php:129
+msgid "Remove Client photo"
+msgstr ""
+
+#: lib/customposts.php:78
+msgid "Remove Member photo"
 msgstr ""
 
 #: lib/customposts.php:27
 msgid "Remove Service photo"
 msgstr ""
 
-#: lib/customposts.php:28
-msgid "Use as Service photo"
+#: lib/customposts.php:180
+msgid "Remove Testimonial photo"
 msgstr ""
 
-#: lib/customposts.php:29
-msgid "Insert into Service"
+#: lib/customposts.php:124
+msgid "Search Client"
 msgstr ""
 
-#: lib/customposts.php:30
-msgid "Uploaded to this Service"
+#: lib/customposts.php:73
+msgid "Search Member"
+msgstr ""
+
+#: lib/customposts.php:22
+msgid "Search Service"
+msgstr ""
+
+#: lib/customposts.php:175
+msgid "Search Testimonial"
+msgstr ""
+
+#: lib/setup.php:31
+msgid "Secondary Navigation"
+msgstr ""
+
+#: front-page.php:89 templates/relposts.php:14
+msgid "See all posts"
+msgstr ""
+
+#: templates/mobilecanvas.php:8
+msgid "See also"
+msgstr ""
+
+#: template-contactform.php:65 lib/customposts.php:12 lib/customposts.php:36
+msgid "Service"
+msgstr ""
+
+#: lib/customposts.php:13
+msgid "Service Archives"
+msgstr ""
+
+#: lib/customposts.php:37
+msgid "Service Description"
+msgstr ""
+
+#: lib/customposts.php:9
+msgctxt "Service General Name"
+msgid "Services"
+msgstr ""
+
+#: lib/customposts.php:25
+msgid "Service Photo"
+msgstr ""
+
+#: lib/customposts.php:10
+msgctxt "Service Singular Name"
+msgid "Service"
+msgstr ""
+
+#: front-page.php:69 lib/customposts.php:15
+msgid "Services"
 msgstr ""
 
 #: lib/customposts.php:31
@@ -222,201 +488,65 @@ msgstr ""
 msgid "Services list navigation"
 msgstr ""
 
-#: lib/customposts.php:33
-msgid "Filter Services list"
-msgstr ""
-
-#: lib/customposts.php:37
-msgid "Service Description"
-msgstr ""
-
-#: lib/customposts.php:60
-msgctxt "Member General Name"
-msgid "Member"
-msgstr ""
-
-#: lib/customposts.php:61
-msgctxt "Member Singular Name"
-msgid "Member"
-msgstr ""
-
-#: lib/customposts.php:62 lib/customposts.php:66 lib/customposts.php:87
-msgid "Members"
-msgstr ""
-
-#: lib/customposts.php:63
-msgid "Member"
-msgstr ""
-
-#: lib/customposts.php:64
-msgid "Member Archives"
-msgstr ""
-
-#: lib/customposts.php:65
-msgid "Parent Member:"
-msgstr ""
-
-#: lib/customposts.php:67
-msgid "Add New Member"
-msgstr ""
-
-#: lib/customposts.php:68 lib/customposts.php:119 lib/customposts.php:170
-msgid "Add New"
-msgstr ""
-
-#: lib/customposts.php:69
-msgid "New Member"
-msgstr ""
-
-#: lib/customposts.php:70
-msgid "Edit Member"
-msgstr ""
-
-#: lib/customposts.php:71
-msgid "Update Member"
-msgstr ""
-
-#: lib/customposts.php:72
-msgid "View Member"
-msgstr ""
-
-#: lib/customposts.php:73
-msgid "Search Member"
-msgstr ""
-
-#: lib/customposts.php:76
-msgid "Member Photo"
+#: lib/customposts.php:128
+msgid "Set Client photo"
 msgstr ""
 
 #: lib/customposts.php:77
 msgid "Set Member photo"
 msgstr ""
 
-#: lib/customposts.php:78
-msgid "Remove Member photo"
+#: lib/customposts.php:26
+msgid "Set Service photo"
 msgstr ""
 
-#: lib/customposts.php:79
-msgid "Use as Member photo"
+#: lib/customposts.php:179
+msgid "Set Testimonial photo"
 msgstr ""
 
-#: lib/customposts.php:80
-msgid "Insert into Member"
+#: front-page.php:69
+msgid "Show"
 msgstr ""
 
-#: lib/customposts.php:81
-msgid "Uploaded to this Member"
+#: template-contact.php:38
+msgid "show on map"
 msgstr ""
 
-#: lib/customposts.php:82
-msgid "Members list"
+#: 404.php:5
+msgid "Sorry, but the page you were trying to view does not exist."
 msgstr ""
 
-#: lib/customposts.php:83
-msgid "Members list navigation"
+#: template-contactform.php:58
+msgid "Specify topic"
 msgstr ""
 
-#: lib/customposts.php:84
-msgid "Filter Members list"
+#: front-page.php:39 templates/mobilecanvas.php:2
+msgid "Specs & Services"
 msgstr ""
 
-#: lib/customposts.php:88
-msgid "Member Description"
+#: template-contactform.php:90
+msgid "Submit form"
 msgstr ""
 
-#: lib/customposts.php:111
-msgctxt "Client General Name"
-msgid "Client"
+#: lib/customposts.php:165
+msgid "Testimonial"
 msgstr ""
 
-#: lib/customposts.php:112
-msgctxt "Client Singular Name"
-msgid "Client"
+#: lib/customposts.php:166
+msgid "Testimonial Archives"
 msgstr ""
 
-#: lib/customposts.php:113 lib/customposts.php:117 lib/customposts.php:138
-msgid "Clients"
-msgstr ""
-
-#: lib/customposts.php:114
-msgid "Client"
-msgstr ""
-
-#: lib/customposts.php:115
-msgid "Client Archives"
-msgstr ""
-
-#: lib/customposts.php:116
-msgid "Parent Client:"
-msgstr ""
-
-#: lib/customposts.php:118
-msgid "Add New Client"
-msgstr ""
-
-#: lib/customposts.php:120
-msgid "New Client"
-msgstr ""
-
-#: lib/customposts.php:121
-msgid "Edit Client"
-msgstr ""
-
-#: lib/customposts.php:122
-msgid "Update Client"
-msgstr ""
-
-#: lib/customposts.php:123
-msgid "View Client"
-msgstr ""
-
-#: lib/customposts.php:124
-msgid "Search Client"
-msgstr ""
-
-#: lib/customposts.php:127
-msgid "Client Photo"
-msgstr ""
-
-#: lib/customposts.php:128
-msgid "Set Client photo"
-msgstr ""
-
-#: lib/customposts.php:129
-msgid "Remove Client photo"
-msgstr ""
-
-#: lib/customposts.php:130
-msgid "Use as Client photo"
-msgstr ""
-
-#: lib/customposts.php:131
-msgid "Insert into Client"
-msgstr ""
-
-#: lib/customposts.php:132
-msgid "Uploaded to this Client"
-msgstr ""
-
-#: lib/customposts.php:133
-msgid "Clients list"
-msgstr ""
-
-#: lib/customposts.php:134
-msgid "Clients list navigation"
-msgstr ""
-
-#: lib/customposts.php:135
-msgid "Filter Clients list"
-msgstr ""
-
-#: lib/customposts.php:139
-msgid "Client Description"
+#: lib/customposts.php:190
+msgid "Testimonial Description"
 msgstr ""
 
 #: lib/customposts.php:162
 msgctxt "Testimonial General Name"
 msgid "Testimonial"
+msgstr ""
+
+#: lib/customposts.php:178
+msgid "Testimonial Photo"
 msgstr ""
 
 #: lib/customposts.php:163
@@ -428,66 +558,6 @@ msgstr ""
 msgid "Testimonials"
 msgstr ""
 
-#: lib/customposts.php:165
-msgid "Testimonial"
-msgstr ""
-
-#: lib/customposts.php:166
-msgid "Testimonial Archives"
-msgstr ""
-
-#: lib/customposts.php:167
-msgid "Parent Testimonial:"
-msgstr ""
-
-#: lib/customposts.php:169
-msgid "Add New Testimonial"
-msgstr ""
-
-#: lib/customposts.php:171
-msgid "New Testimonial"
-msgstr ""
-
-#: lib/customposts.php:172
-msgid "Edit Testimonial"
-msgstr ""
-
-#: lib/customposts.php:173
-msgid "Update Testimonial"
-msgstr ""
-
-#: lib/customposts.php:174
-msgid "View Testimonial"
-msgstr ""
-
-#: lib/customposts.php:175
-msgid "Search Testimonial"
-msgstr ""
-
-#: lib/customposts.php:178
-msgid "Testimonial Photo"
-msgstr ""
-
-#: lib/customposts.php:179
-msgid "Set Testimonial photo"
-msgstr ""
-
-#: lib/customposts.php:180
-msgid "Remove Testimonial photo"
-msgstr ""
-
-#: lib/customposts.php:181
-msgid "Use as Testimonial photo"
-msgstr ""
-
-#: lib/customposts.php:182
-msgid "Insert into Testimonial"
-msgstr ""
-
-#: lib/customposts.php:183
-msgid "Uploaded to this Testimonial"
-msgstr ""
-
 #: lib/customposts.php:184
 msgid "Testimonials list"
 msgstr ""
@@ -496,96 +566,88 @@ msgstr ""
 msgid "Testimonials list navigation"
 msgstr ""
 
-#: lib/customposts.php:186
-msgid "Filter Testimonials list"
-msgstr ""
-
-#: lib/customposts.php:190
-msgid "Testimonial Description"
-msgstr ""
-
-#: lib/setup.php:30
-msgid "Primary Navigation"
-msgstr ""
-
-#: lib/setup.php:31
-msgid "Secondary Navigation"
-msgstr ""
-
-#: lib/setup.php:59
-msgid "Primary"
-msgstr ""
-
-#: lib/setup.php:68
-msgid "Footer"
-msgstr ""
-
-#: lib/setup.php:77
-msgid "Mobile Off-Canvas"
-msgstr ""
-
-#: templates/content-single.php:13
-msgid "Author"
-msgstr ""
-
-#: templates/content-single.php:15
-msgid "Date"
-msgstr ""
-
-#: templates/content-single.php:17
-msgid "Category"
-msgstr ""
-
-#: templates/promoservice.php:6
-msgid "Learn more about"
-msgstr ""
-
-#: templates/promoservice.php:7
-msgid "<em>our</em> Services related"
-msgstr ""
-
-#: templates/partners.php:12
-msgid "Proud to be partner with"
-msgstr ""
-
-#: templates/homedivi.php:3
-msgid "<em>for</em> Corporate clients"
-msgstr ""
-
-#: templates/homedivi.php:22
-msgid "<em>for</em> Private clients"
-msgstr ""
-
-#: templates/relposts.php:4
-msgid "Related posts"
-msgstr ""
-
-#: templates/mobilecanvas.php:8
-msgid "See also"
-msgstr ""
-
-#: templates/testimonials.php:3
-msgid "Recommendations by Our clients"
-msgstr ""
-
-#. Name of the theme
-msgid "Airon Theme"
-msgstr ""
-
-#. Description of the theme
+#: lib/contact.php:82 lib/contact.php:85
 msgid ""
-"Airon is a Custom WordPress Theme. <a href=\"https://github.com/ceto/airon\">"
-"Sourcecode is available on GitHub</a>"
+"Thank you for writing us! Your interest was recorded. Our specialists will "
+"contact you shortly."
 msgstr ""
 
-#. URI of the theme
-msgid "http://hydrogene.hu/"
+#. Name of the template
+msgid "The Team Template"
 msgstr ""
 
-#. Author of the theme
-msgid "Hydrogene"
+#: template-contactform.php:23
+msgid "There are some errors in your form."
 msgstr ""
 
-#. Author URI of the theme
-msgid "https://hydrogene.hu/"
+#: lib/customposts.php:122
+msgid "Update Client"
+msgstr ""
+
+#: lib/customposts.php:71
+msgid "Update Member"
+msgstr ""
+
+#: lib/customposts.php:20
+msgid "Update Service"
+msgstr ""
+
+#: lib/customposts.php:173
+msgid "Update Testimonial"
+msgstr ""
+
+#: lib/customposts.php:132
+msgid "Uploaded to this Client"
+msgstr ""
+
+#: lib/customposts.php:81
+msgid "Uploaded to this Member"
+msgstr ""
+
+#: lib/customposts.php:30
+msgid "Uploaded to this Service"
+msgstr ""
+
+#: lib/customposts.php:183
+msgid "Uploaded to this Testimonial"
+msgstr ""
+
+#: lib/customposts.php:130
+msgid "Use as Client photo"
+msgstr ""
+
+#: lib/customposts.php:79
+msgid "Use as Member photo"
+msgstr ""
+
+#: lib/customposts.php:28
+msgid "Use as Service photo"
+msgstr ""
+
+#: lib/customposts.php:181
+msgid "Use as Testimonial photo"
+msgstr ""
+
+#: lib/customposts.php:123
+msgid "View Client"
+msgstr ""
+
+#: lib/customposts.php:72
+msgid "View Member"
+msgstr ""
+
+#: lib/customposts.php:21
+msgid "View Service"
+msgstr ""
+
+#: lib/customposts.php:174
+msgid "View Testimonial"
+msgstr ""
+
+#: front-page.php:12
+msgid "We Solve."
+msgstr ""
+
+#: lib/contact.php:83
+msgid "Üdvözlettel,"
 msgstr ""

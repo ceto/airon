@@ -6,8 +6,8 @@ if($_POST) {
   $to_Email = "hello@airon.hu";
   $dev_Email = "szabogabor@hydrogene.hu";
   // $to_Email = "szabogabi@gmail.com";
-  $subject = __('Kapcsolatfelvétel a weboldalon','airon');
-  $resp_subject = "Airon - Köszönjük, hogy kapcsolatba lépett velünk! ";
+  $subject = __('Kapcsolatfelvétel a weboldalon', 'airon');
+  $resp_subject = __('Airon - Thank you for writing us!', 'airon');
 
   if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
 
@@ -78,11 +78,11 @@ if($_POST) {
     'Reply-To: '.$to_Email.'' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-    $resp_text=__('Tisztelt','airon').' '.$user_Name.'!'."\r\n\n".
-    __('Köszönjük, hogy kapcsolatba lépett velünk! Szakértőnk hamarosan jelentkezik a megadott elérhetőségek egyikén, hogy részletesen megbeszélhessék, hogyan tudunk segíteni Önnek.','airon')."\r\n\n".
-    'Üdvözlettel,'."\r\n".'Airon csapata';
+    $resp_text=__('Dear','airon').' '.$user_Name.'!'."\r\n\n".
+    __('Thank you for writing us! Your interest was recorded. Our specialists will contact you shortly.','airon')."\r\n\n".
+    __('Best regards,', 'airon')."\r\n".'Airon';
     @wp_mail($user_Email, $resp_subject, $resp_text, $resp_headers);
-    $output = json_encode(array('type'=>'message', 'text' => __('Köszönjük, hogy kapcsolatba lépett velünk! Érdeklődését rögzítettük. Szakértőnk hamarosan jelentkezik.','airon')));
+    $output = json_encode(array('type'=>'message', 'text' => __('Thank you for writing us! Your interest was recorded. Our specialists will contact you shortly.','airon')));
     die($output);
   }
 }
