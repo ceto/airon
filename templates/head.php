@@ -19,4 +19,25 @@
     <meta name="msapplication-config"
         content="<?= get_stylesheet_directory_uri(); ?>/dist/images/favicons/browserconfig.xml">
     <meta name="theme-color" content="#231F20">
+    <?php if (get_current_blog_id() == get_main_site_id() ) :  //angol ha true ?>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R471J6K4C9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-R471J6K4C9');
+    </script>
+    <?php else: ?>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3XC6XJT6CV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3XC6XJT6CV');
+    </script>
+    <?php endif; ?>
 </head>
