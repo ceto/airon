@@ -28,6 +28,9 @@
       endif;
       ?>
     </nav>
+    <div class="banner__ctablock">
+      <a href="<?php the_permalink(4990485); ?>" class="banner__cta"><?= __('Ready to <em>get started?</em>','airon'); ?></a>
+    </div>
     <div class="banner__mobileblock">
         <button type="button" class="menutoggler" data-toggle="mobilenavcanvas"></button>
     </div>

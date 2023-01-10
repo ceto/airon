@@ -47,7 +47,7 @@ $specializations = get_the_terms( $post->ID, 'specialization' );
 $speci=$specializations[0];
 ?>
 <style>
-.pagehead,  .menu--sec, .menutoggler:after, .button, .button:hover, .button:focus {
+.pagehead,  .amenu--sec, .menutoggler:after, .button, .button:hover, .button:focus, .banner__cta {
     background-color: <?= speccolor($speci->term_id) ?>;
 }
 .banner__brand svg #firstletter {

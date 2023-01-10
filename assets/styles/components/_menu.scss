@@ -1,5 +1,6 @@
 .menu--main {
-  font-size: 1.125rem;
+  font-size: .9375rem;
+  line-height: 1.2;
   text-transform: uppercase;
   font-family: $header-font-family;
   list-style: none;
@@ -7,15 +8,18 @@
   padding:0 0 0 0;
   display: flex;
   flex-wrap: nowrap;
-  gap:1em;
+  gap:0 .875em;
+  white-space: nowrap;
+  @include breakpoint(xxlarge) {
+    font-size: 1.125rem;
+  }
 
   > li {
     > a {
       color:inherit;
       position: relative;
-      white-space: nowrap;
       display: inline-block;
-      padding:.5em 0;
+      padding:.666em 0;
 
       &:before {
           font-weight: $global-weight-bold;
@@ -34,6 +38,7 @@
 
     > a {
         font-weight: $global-weight-bold;
+        color: lighten($body-font-color,10%);
         &:before {
             color:inherit;
         }
@@ -48,24 +53,25 @@
   width:min-content;
   display: flex;
   flex-wrap: nowrap;
+  white-space: nowrap;
 
   //padding:0 .25rem;
-      //text-transform: capitalize;
-      //font-family: $header-font-family;
+  text-transform: lowercase;
+  font-family: $header-font-family;
   font-size: .875rem;
-  background-color: $dark-gray;
-  color:$white;
-  //font-weight: $global-weight-semibold;
+  background-color: $medium-gray;
+  color:$dark-gray;
+  // font-weight: $global-weight-semibold;
   > li {
     &:not(:first-child) {
-      border-left: 1px solid $medium-gray;
+      border-left: 1px solid #fff;
     }
     > a {
       display: inline-block;
       color:inherit;
       position: relative;
-      padding:.125rem 1rem;
-      text-transform: lowercase;
+      padding:.125rem 1.25rem;
+      // text-transform: lowercase;
       //font-variant: small-caps;
     }
   }

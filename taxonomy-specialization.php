@@ -21,7 +21,7 @@
 </div>
 <?php endif; ?>
 <style>
-.pagehead, .ps--inverse, .menu--sec, .menutoggler:after, .readmore:hover, .readmore:focus{
+.pagehead, .ps--inverse, .amenu--sec, .menutoggler:after, .readmore:hover, .readmore:focus, .banner__cta {
 background-color: <?= speccolor(get_queried_object()->term_id) ?>;
 }
 .banner__brand svg #firstletter {

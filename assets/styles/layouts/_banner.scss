@@ -11,11 +11,13 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
+    gap: 0;
+    padding: 0 0 0 1rem;
 }
 
 .banner__brand {
   // float:left;
-  margin:0 1.25rem .333rem 1.25rem;
+  margin:0 0 .333rem 0;
   display: block;
   overflow: hidden;
   width: 8.5rem;
@@ -40,17 +42,73 @@
 .banner__nav {
 
   display: none;
-  @include breakpoint(large) {
+  margin-left: auto;
+  @include breakpoint(xlarge) {
     display: block;
   }
 }
+.banner__ctablock {
+  // background-color: $medium-gray;
+  background-color: $primary-color;
+  border-left: 1px solid #fff;
+  align-self: stretch;
+  padding:0 0 0 0;
+  display: flex;
+  margin-left: auto;
+  @include breakpoint(xlarge) {
+    margin-left: 0;
+  }
 
+}
+.banner__cta {
+  font-size:1rem;
+  line-height: 1.4;
+  text-align: center;
+  appearance: none;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // justify-items: center;
+  // margin:auto 0;
+  padding:.5em 1.5em;
+  // font-family: $header-font-family;
+  text-transform: uppercase;
+  font-weight: $global-weight-bold;
+  // height: 100%;
+
+  color: #fff;
+  text-decoration: none;
+
+
+
+
+
+  em {
+
+    font-style: normal;
+    display: block;
+    font-size: 70.666%;
+  }
+  &:hover, &:focus {
+    color: $white;
+    text-decoration: none;
+    // background-color: inherit;
+    filter: contrast(1.125);
+  }
+
+
+}
 .banner__mobileblock {
   // position: absolute;
   // right: map-get($grid-column-gutter,small);
   // top:50%;
   // transform:translateY(-50%);
-  @include breakpoint(large) {
+  background-color: $medium-gray;
+  border-left: 2px solid #fff;
+
+  @include breakpoint(xlarge) {
     display: none;
   }
 }
