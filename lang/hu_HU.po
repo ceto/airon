@@ -5,7 +5,7 @@ msgstr ""
 "POT-Creation-Date: 2017-10-05 12:04+0000\n"
 "Language: hu_HU\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"PO-Revision-Date: 2021-01-05 10:37+0000\n"
+"PO-Revision-Date: 2023-01-10 14:49+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "Project-Id-Version: Airon Theme\n"
 "Report-Msgid-Bugs-To: \n"
@@ -74,6 +74,10 @@ msgstr "Kérdezzen"
 #: templates/content-single.php:13
 msgid "Author"
 msgstr "Szerző"
+
+#: lib/contact.php:83
+msgid "Best regards,"
+msgstr ""
 
 #: template-contactform.php:34
 msgid "Business name"
@@ -402,6 +406,10 @@ msgstr "Büszkék vagyunk partnereinkre"
 msgid "Providing Business Services"
 msgstr "Üzleti szolgáltatásokat kínálunk"
 
+#: templates/header.php:32
+msgid "Ready to <em>get started?</em>"
+msgstr "Kérdése van? <em>Vágjunk bele!</em>"
+
 #: templates/testimonials.php:3
 msgid "Recommendations by Our clients"
 msgstr "Ügyfél ajánlások"
@@ -653,7 +661,3 @@ msgstr ""
 #: front-page.php:12
 msgid "We Solve."
 msgstr "We Solve."
-
-#: lib/contact.php:83
-msgid "Üdvözlettel,"
-msgstr "Best regards,"

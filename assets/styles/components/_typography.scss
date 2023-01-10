@@ -171,11 +171,19 @@ dl {
 }
 
 dl.metadef {
+  // max-width: 42rem;
+  display:grid;
+  grid-template-columns: repeat( 3, 1fr );
+  gap:0 1rem;
   > dt {
+    // grid-row-start: 1;
     font-size: .75rem;
+
   }
   > dd {
+    grid-row-start: 2;
     font-size: .875rem;
+    padding-bottom: .5rem;
   }
 }
 

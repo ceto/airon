@@ -61,7 +61,7 @@
 
 }
 .banner__cta {
-  font-size:1rem;
+  font-size:.75rem;
   line-height: 1.4;
   text-align: center;
   appearance: none;
@@ -80,6 +80,10 @@
 
   color: #fff;
   text-decoration: none;
+
+  @include breakpoint(large) {
+    font-size:1rem;
+  }
 
 
 

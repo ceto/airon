@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-01-05 10:37+0000\n"
+"POT-Creation-Date: 2023-01-10 14:48+0000\n"
 "Language: \n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -69,6 +69,10 @@ msgstr ""
 
 #: templates/content-single.php:13
 msgid "Author"
+msgstr ""
+
+#: lib/contact.php:83
+msgid "Best regards,"
 msgstr ""
 
 #: template-contactform.php:34
@@ -398,6 +402,10 @@ msgstr ""
 msgid "Providing Business Services"
 msgstr ""
 
+#: templates/header.php:32
+msgid "Ready to <em>get started?</em>"
+msgstr ""
+
 #: templates/testimonials.php:3
 msgid "Recommendations by Our clients"
 msgstr ""
@@ -646,8 +654,4 @@ msgstr ""
 
 #: front-page.php:12
 msgid "We Solve."
-msgstr ""
-
-#: lib/contact.php:83
-msgid "Üdvözlettel,"
 msgstr ""

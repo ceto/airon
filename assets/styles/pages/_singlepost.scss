@@ -2,27 +2,9 @@
   width:100%;
   position: relative;
   //background-color: red;
-  @include breakpoint('large') {
-    text-align: right;
-
-    dl.metadef {
-      position: absolute;
-      right: - map-get($grid-column-gutter,large)/2;
-      top:.25rem;
-    }
-  }
 }
 
 
-
-dl.metadef {
-  > dt {
-    font-size: .75rem;
-  }
-  > dd {
-    font-size: .875rem;
-  }
-}
 
 .thepost__lead {
   font-size: 1.125rem;
@@ -40,6 +22,8 @@ dl.metadef {
 .thepost_featimage {
   margin-bottom: $paragraph-margin-bottom*2;
   margin-top: $paragraph-margin-bottom;
+  background-color: $medium-gray;
+  text-align: center;
 }
 
 .thepost__promoposts {
