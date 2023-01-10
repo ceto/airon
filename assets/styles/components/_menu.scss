@@ -1,21 +1,22 @@
 .menu--main {
+  font-size: 1.125rem;
   text-transform: uppercase;
   font-family: $header-font-family;
-  position: absolute;
-  margin:0 0;
-  padding:0 1.666rem 0 0;
-  right:0;
-  bottom:.4125rem;
-  max-width:80%;
+  list-style: none;
+  margin:0 1rem 0 0;
+  padding:0 0 0 0;
+  display: flex;
+  flex-wrap: nowrap;
+  gap:1em;
+
   > li {
     > a {
       color:inherit;
       position: relative;
       white-space: nowrap;
-      padding:.7rem .5rem;
-      @include breakpoint(xlarge) {
-        padding: $menu-item-padding;
-      }
+      display: inline-block;
+      padding:.5em 0;
+
       &:before {
           font-weight: $global-weight-bold;
           content:'. ';
@@ -41,13 +42,16 @@
 }
 
 .menu--sec {
-  position: absolute;
-  right:0;
-  margin:0 0;
-  padding:0 1.5rem 0 0;
+  list-style: none;
+  margin:0 0 0 auto;
+  padding:0 0;
+  width:min-content;
+  display: flex;
+  flex-wrap: nowrap;
+
   //padding:0 .25rem;
-  //text-transform: capitalize;
-  //font-family: $header-font-family;
+      //text-transform: capitalize;
+      //font-family: $header-font-family;
   font-size: .875rem;
   background-color: $dark-gray;
   color:$white;
@@ -57,9 +61,10 @@
       border-left: 1px solid $medium-gray;
     }
     > a {
+      display: inline-block;
       color:inherit;
       position: relative;
-      padding:.5rem 1rem;
+      padding:.125rem 1rem;
       text-transform: lowercase;
       //font-variant: small-caps;
     }

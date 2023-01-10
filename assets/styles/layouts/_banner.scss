@@ -1,15 +1,21 @@
 .banner {
   position: relative;
-  > .container {
+
+}
+
+.banner__container {
     background: $body-background;
     position: relative;
     box-shadow: 0 0 .5rem 0 rgba(#000,.25);
-  }
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .banner__brand {
-  float:left;
-  margin:1.333rem 0 1.5rem;
+  // float:left;
+  margin:0 1.25rem .333rem 1.25rem;
   display: block;
   overflow: hidden;
   width: 8.5rem;
@@ -32,16 +38,23 @@
 }
 
 .banner__nav {
-  @include clearfix();
-  float:right;
+
+  display: none;
+  @include breakpoint(large) {
+    display: block;
+  }
 }
 
 .banner__mobileblock {
-  position: absolute;
-  right: map-get($grid-column-gutter,small);
-  top:50%;
-  transform:translateY(-50%);
+  // position: absolute;
+  // right: map-get($grid-column-gutter,small);
+  // top:50%;
+  // transform:translateY(-50%);
+  @include breakpoint(large) {
+    display: none;
+  }
 }
 .menutoggler {
+  margin:1.25rem;
   @include hamburger($body-font-color, $body-font-color, 36px, 26px, 5px, 3);
 }

@@ -7,23 +7,17 @@
   //background-attachment: fixed;
   background-blend-mode: multiply;
   color:$white;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: clamp(4rem, 7vw, 12rem);
+  padding-bottom: clamp(1rem, 2.5vw, 3.5rem);
   text-align: center;
-  @include breakpoint(xlarge) {
-    padding-top: 10rem;
-    margin-top: -5.25rem;
-  }
+
 }
 
 .pagehead__title {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
   margin:.125em 0 0;
   &:after {
     content:'.';
-  }
-  @include breakpoint(xlarge) {
-    font-size: 2rem;
   }
   a {
     color:inherit;
@@ -34,10 +28,7 @@
   }
 }
 .pagehead__logo {
-  width:2rem;
-  @include breakpoint(xlarge) {
-    width: 3rem;
-  }
+  width:clamp(2rem, 2.5vw, 3rem);
 }
 
 

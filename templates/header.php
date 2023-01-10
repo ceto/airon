@@ -1,5 +1,5 @@
 <header class="banner">
-  <div class="container row column">
+  <div class="banner__container">
     <a class="banner__brand" href="<?= esc_url(home_url('/')); ?>">
       <svg width="284px" height="76px" preserveAspectRatio="xMinYMin" viewBox="0 0 284 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <title>Airon</title>
@@ -16,19 +16,19 @@
           </g>
       </svg>
     </a>
-    <nav class="banner__nav show-for-large">
+    <nav class="banner__nav">
       <?php
       if (has_nav_menu('secondary_navigation')) :
-        wp_nav_menu(['theme_location' => 'secondary_navigation', 'menu_class' => 'menu menu--sec']);
+        wp_nav_menu(['theme_location' => 'secondary_navigation', 'menu_class' => 'menu--sec']);
       endif;
       ?>
       <?php
       if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'menu menu--main']);
+        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'menu--main']);
       endif;
       ?>
     </nav>
-    <div class="banner__mobileblock hide-for-large">
+    <div class="banner__mobileblock">
         <button type="button" class="menutoggler" data-toggle="mobilenavcanvas"></button>
     </div>
   </div>

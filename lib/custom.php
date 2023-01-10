@@ -13,17 +13,32 @@
   }
 
   // 3. Hide ACF field group menu item
-  add_filter('acf/settings/show_admin', '__return_false');
+  // add_filter('acf/settings/show_admin', '__return_false');
 
   // 4. Include ACF
   include_once( get_stylesheet_directory() . '/lib/acf/acf.php' );
 
-  // 5 Generated fields include
-  include_once( get_stylesheet_directory() . '/lib/acfdefs.php' );
+  // 5. Unhide native metabox
+  // add_filter('acf/settings/remove_wp_meta_box', '__return_false');
 
-  function speccolor($spec_id) {
-    return '#'.get_field( 'color', 'specialization_'.$spec_id );
+  // 6. Save JSON
+  add_filter('acf/settings/save_json', 'helsinki_acf_json_save_point');
+  function helsinki_acf_json_save_point( $path ) {
+      $path = get_stylesheet_directory() . '/lib/acfjson';
+      return $path;
   }
+
+  // 7. Load JSON
+  add_filter('acf/settings/load_json', 'helsinki_acf_json_load_point');
+  function helsinki_acf_json_load_point( $paths ) {
+      unset($paths[0]);
+      $paths[] = get_stylesheet_directory() . '/lib/acfjson';
+      return $paths;
+  }
+
+function speccolor($spec_id) {
+  return '#'.get_field( 'color', 'specialization_'.$spec_id );
+}
 
 function airon_mime_types($mimes) {
   $mimes['svg'] = 'image/svg+xml';
