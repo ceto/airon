@@ -172,18 +172,34 @@ dl {
 
 dl.metadef {
   // max-width: 42rem;
-  display:grid;
-  grid-template-columns: repeat( 3, 1fr );
-  gap:0 1rem;
-  > dt {
-    // grid-row-start: 1;
-    font-size: .75rem;
 
+  display:flex;
+  flex-wrap: wrap;
+  gap:.5rem 1rem;
+  // max-width: 22rem;
+  > div {
+    flex-shrink: 1;
+    flex-basis: 12rem;
+    &.double {
+      display: flex;
+      flex-wrap: nowrap;
+      gap:0 .333em;
+      flex-grow: 1;
+      flex-basis: 100%;
+      line-height: 1.2;
+    }
   }
-  > dd {
-    grid-row-start: 2;
+  dt {
     font-size: .875rem;
-    padding-bottom: .5rem;
+    font-family: $header-font-family;
+    font-weight: $header-font-weight;
+    line-height: 1.1;
+    &:after {
+      content:':';
+    }
+  }
+  dd {
+    font-size: .875rem;
   }
 }
 

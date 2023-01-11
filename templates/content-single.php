@@ -4,22 +4,24 @@
     <div class="row">
         <div class="columns tablet-8 ps ps--narrow content">
             <h1 class="thepost__title"><?php the_title(); ?></h1>
-            <aside class="thepost__aside">
-                <dl class="metadef">
-                    <dt><?= __('Author','airon'); ?></dt>
-                    <dd><a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn"><?= get_the_author(); ?></a></dd>
-                    <dt><?= __('Date','airon'); ?></dt>
-                    <dd><time class="meta__updated" datetime="<?= get_post_time('c', true); ?>"><?= get_the_date(); ?></time></dd>
-                    <dt><?= __('Category','airon'); ?></dt>
-                    <dd><?php echo get_the_category_list( ', '); ?></dd>
-                </dl>
-            </aside>
+            <div class="hentry__meta">
+              <?php get_template_part('templates/entry-meta'); ?>
+            </div>
+            <hr>
+            <dl class="metadef">
+                <div class="double">
+                  <dt><?= __('Category','airon'); ?></dt>
+                  <dd><?php echo get_the_category_list( ', '); ?></dd>
+                </div>
+            </dl>
+            <br>
+            <?php $content_arr = get_extended ( $post->post_content ); ?>
             <header class="thepost__header">
-                <?php if ( has_excerpt() != '' ) :?>
-                <div class="thepost__lead"><?php the_excerpt(); ?></div>
+                <?php if ($content_arr['extended']!='') : ?>
+                <div class="thepost__lead"><?= apply_filters('the_content', $content_arr['main']); ?></div>
                 <?php endif; ?>
             </header>
-            <?php if (has_post_thumbnail() ) : ?>
+            <?php if (FALSE && has_post_thumbnail() ) : ?>
             <figure class="thepost_featimage">
                 <?php the_post_thumbnail('medium_Large' ); ?>
             </figure>
