@@ -27,7 +27,11 @@
             </figure>
             <?php endif; ?>
             <div class="thepost__content content ps ps--narrow ps--notop">
-                <?php the_content(); ?>
+                <?php if ($content_arr['extended']!='') : ?>
+                  <?= apply_filters('the_content', $content_arr['extended']); ?>
+                <?php else: ?>
+                  <?php the_content(); ?>
+                <?php endif; ?>
             </div>
             <footer class="thepost__footer">
                 <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
