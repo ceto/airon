@@ -1,0 +1,23 @@
+.servicepromogrid {
+  list-style: none;
+  margin:0;
+  padding:0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(21.5rem, 1fr));
+  @include breakpoint(xlarge) {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+.servicepromogrid-mobiledouble {
+  list-style: none;
+  margin:0;
+  padding:0;
+  display: grid;
+  gap: 2rem 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  @include breakpoint(tablet) {
+    grid-template-columns: repeat(3,1fr);
+  }
+}

@@ -19,26 +19,28 @@ $specs = get_terms([
             </div>
         </div>
     </div>
-    <div class="wrapper wrapper--narrow ps ps--notop">
-        <div class="row small-up-2">
-            <?php foreach ($specs as $key => $speci) : ?>
-            <div class="column">
-                <section class="coinfo ps ps--narrow">
-                    <?php $logo = get_field( 'logo', 'specialization_'.$speci->term_id ) ?>
-                    <img class="coinfo__logo" src="<?= $logo['url'] ?>" alt="<?= $speci->name ?>">
-                    <h3 class="coinfo__coname"><?= get_field( 'company_name', 'specialization_'.$speci->term_id ) ?></h3>
-                    <p class="coinfo__addr">
-                        H-<?= get_field( 'zip', 'specialization_'.$speci->term_id ) ?>, <?= get_field( 'city', 'specialization_'.$speci->term_id ) ?><br>
-                    <?= get_field( 'address', 'specialization_'.$speci->term_id ) ?></p>
-                    <p class="coinfo__contact">
-                        Tel.: <a href="tel:<?= get_field( 'tel', 'specialization_'.$speci->term_id ) ?>"><?= get_field( 'tel', 'specialization_'.$speci->term_id ) ?></a><br>
-                        E-mail: <a href="mailto:<?= get_field( 'email', 'specialization_'.$speci->term_id ) ?>"><?= get_field( 'email', 'specialization_'.$speci->term_id ) ?></a>
-                    </p>
-                    <?php $thefulladdress = get_field( 'zip', 'specialization_'.$speci->term_id ).' '.get_field( 'city', 'specialization_'.$speci->term_id ).' '.get_field( 'address', 'specialization_'.$speci->term_id ) ;  ?>
-                    <p><small><a target="_blank" href="http://maps.google.com/maps?q=<?= urlencode($thefulladdress); ?>"><?= __('show on map','airon') ?></a></small></p>
-                </section>
-            </div>
-            <?php endforeach; ?>
+    <div class="wrapper ps ps--notop">
+        <div class="row column">
+          <ul class="servicepromogrid-mobiledouble">
+              <?php foreach ($specs as $key => $speci) : ?>
+              <li>
+                  <section class="coinfo">
+                      <?php $logo = get_field( 'logo', 'specialization_'.$speci->term_id ) ?>
+                      <img class="coinfo__logo" src="<?= $logo['url'] ?>" alt="<?= $speci->name ?>">
+                      <h3 class="coinfo__coname"><?= get_field( 'company_name', 'specialization_'.$speci->term_id ) ?></h3>
+                      <p class="coinfo__addr">
+                          H-<?= get_field( 'zip', 'specialization_'.$speci->term_id ) ?>, <?= get_field( 'city', 'specialization_'.$speci->term_id ) ?><br>
+                      <?= get_field( 'address', 'specialization_'.$speci->term_id ) ?></p>
+                      <p class="coinfo__contact">
+                          Tel.: <a href="tel:<?= get_field( 'tel', 'specialization_'.$speci->term_id ) ?>"><?= get_field( 'tel', 'specialization_'.$speci->term_id ) ?></a><br>
+                          E-mail: <a href="mailto:<?= get_field( 'email', 'specialization_'.$speci->term_id ) ?>"><?= get_field( 'email', 'specialization_'.$speci->term_id ) ?></a>
+                      </p>
+                      <?php $thefulladdress = get_field( 'zip', 'specialization_'.$speci->term_id ).' '.get_field( 'city', 'specialization_'.$speci->term_id ).' '.get_field( 'address', 'specialization_'.$speci->term_id ) ;  ?>
+                      <p><small><a target="_blank" href="http://maps.google.com/maps?q=<?= urlencode($thefulladdress); ?>"><?= __('show on map','airon') ?></a></small></p>
+                  </section>
+              </li>
+              <?php endforeach; ?>
+          </ul>
         </div>
     </div>
     <div class="container">

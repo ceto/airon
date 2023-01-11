@@ -1,8 +1,9 @@
 <?php $relservices = get_field('relatedservices'); ?>
 <?php if ( is_array($relservices) ) : ?>
-  <div class="container ps ps--narrow ps--inverse">
+  <div class="acontainer ps ps--narrow ps--light ps--bordered">
+    <div class="wrapper">
       <div class="row">
-          <div class="columns tablet-10 tablet-centered large-8">
+          <div class="columns">
               <h2 class="indentedtitle"><?= __('Learn more about', 'airon') ?></h2>
               <h3><?= __('<em>our</em> Services related', 'airon'); ?></h3>
               <ul class="divispeclist">
@@ -14,5 +15,6 @@
               <?php wp_reset_postdata(); ?>
           </div>
       </div>
+    </div>
   </div>
 <?php endif; ?>

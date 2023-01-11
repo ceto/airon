@@ -1,6 +1,6 @@
 <?php while (have_posts()) : the_post(); ?>
 <?php  get_template_part('templates/post', 'header'); ?>
-<article <?php post_class('thepost container ps'); ?>>
+<article <?php post_class('thepost wrapper ps'); ?>>
     <div class="row">
         <div class="columns tablet-8 ps ps--narrow content">
             <h1 class="thepost__title"><?php the_title(); ?></h1>

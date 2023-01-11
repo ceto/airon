@@ -39,8 +39,10 @@ $specs = get_terms([
             <h2 class="indentedtitle"><?php _e('Specs & Services', 'airon') ?></h2>
         </div>
     </div>
+    <br>
     <div class="container awrapper awrapper--narrow">
-        <div class="row acollapse tablet-up-2 large-up-2" data-equalizer data-equalize-on="tablet">
+        <div class="row column">
+        <ul class="servicepromogrid" data-equalizer data-equalize-on="tablet">
             <?php foreach ($specs as $key => $speci) : ?>
             <?php
                 $args = array(
@@ -57,7 +59,7 @@ $specs = get_terms([
                 );
                 $services = new WP_Query( $args );
             ?>
-            <div class="column">
+            <li>
                 <div class="specicard" style="background-color: <?= speccolor($speci->term_id) ?>" data-equalizer-watch>
                     <h3 class="specicard__title"><a href="<?= get_term_link($speci) ?>"><?= $speci->name ?></a></h3>
                     <ul class="specicard__list">
@@ -65,14 +67,19 @@ $specs = get_terms([
                         <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
                         <?php endwhile; ?>
                     </ul>
-                    <div class="specicard__summary"><?= term_description($speci); ?></div>
+                    <?php $content_arr = get_extended ( get_term($speci)->description ); //var_dump($content_arr); ?>
+                    <div class="specicard__summary">
+                      <?= apply_filters('the_content', preg_replace('/<img[^>]+./','',$content_arr['main'])); ?>
+                    </div>
                     <a href="<?= get_term_link($speci) ?>" class="specicard__action"><?= __('Show','airon') ?> <?= $speci->name ?> <?= __('Services','airon') ?></a>
                 </div>
-            </div>
+            </li>
             <?php endforeach; ?>
-        </div>
+        </ul>
         <?php wp_reset_postdata(); ?>
+        </div>
     </div>
+    <br><br>
 </div>
 <div class="hometests aps--light">
     <div class="container ps ps--narrow">
@@ -80,14 +87,14 @@ $specs = get_terms([
     </div>
 </div>
 
-<div class="homenews ps ps--dark">
-    <div class="container">
-        <div class="row column">
-            <aside class="promoposts homenews__promoposts">
-                <h2 class="indentedtitle"><?= __('From Our Blog', 'airon') ?></h2>
-                <?php get_template_part('templates/promopost'); ?>
-                <a class="promoposts__action" href="<?php the_permalink(get_option( 'page_for_posts' )); ?>"><?= __('See all posts','airon') ?>&hellip;</a>
-            </aside>
+<div class="homenews ps ps--light ps--bordered aps--narrow">
+    <div class="wrapper wrapper--narrow">
+      <div class="row column">
+          <aside class="promoposts homenews__promoposts">
+              <h2 class="indentedtitle"><?= __('From Our Blog', 'airon') ?></h2>
+              <?php get_template_part('templates/promopost'); ?>
+              <a class="promoposts__action" href="<?php the_permalink(get_option( 'page_for_posts' )); ?>"><?= __('See all posts','airon') ?>&hellip;</a>
+          </aside>
         </div>
     </div>
 </div>
