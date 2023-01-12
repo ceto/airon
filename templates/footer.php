@@ -12,9 +12,8 @@
             ?>
             <?php dynamic_sidebar('sidebar-footer'); ?>
         </div>
-        <div class="sitefooter__bottom row column">
+        <div class="sitefooter__bottom column row expanded">
             <p>site by <a href="http://hydrogene.hu" target="_blank">HYDROGENE</a></p>
-
         </div>
     </div>
 </footer>
