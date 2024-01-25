@@ -37,7 +37,12 @@
   }
 
 function speccolor($spec_id) {
-  return '#'.get_field( 'color', 'specialization_'.$spec_id );
+  if ($color = get_field( 'color', 'specialization_'.$spec_id ) ) {
+  } else {
+    $color = 'd92478';
+  }
+  return '#'.$color;
+
 }
 
 function airon_mime_types($mimes) {

@@ -1,6 +1,6 @@
 <?php use Roots\Sage\Titles; ?>
 <?php $headerimage = get_field('banner','specialization_'.get_queried_object()->term_id);?>
-<section class="pagehead specihead" style="background-image: url(<?= $headerimage['url']  ?>)">
+<section class="pagehead specihead" <?= $headerimage?'style="background-image: url('.$headerimage['url'].')"':''; ?> >
     <div class="container row column">
         <img class="pagehead__logo" src="<?= get_stylesheet_directory_uri(); ?>/dist/images/logoa.svg" alt="Airon">
         <h1 class="pagehead__title"><?= Titles\title(); ?></h1>

@@ -5,8 +5,15 @@
 ?>
 <?php
 $specs = get_terms([
-'taxonomy' => 'specialization',
-'hide_empty' => false,
+  'taxonomy' => 'specialization',
+  'hide_empty' => false,
+  'meta_query' => array(
+    array(
+       'key'       => 'showoncontact',
+       'value'     => 1,
+       'compare'   => '=='
+    )
+  )
 ]);
 ?>
 <?php while (have_posts()) : the_post(); ?>
@@ -25,8 +32,11 @@ $specs = get_terms([
               <?php foreach ($specs as $key => $speci) : ?>
               <li>
                   <section class="coinfo">
-                      <?php $logo = get_field( 'logo', 'specialization_'.$speci->term_id ) ?>
-                      <img class="coinfo__logo" src="<?= $logo['url'] ?>" alt="<?= $speci->name ?>">
+                      <?php if ($logo = get_field( 'logo', 'specialization_'.$speci->term_id ) ): ?>
+                        <img class="coinfo__logo" src="<?= $logo['url'] ?>" alt="<?= $speci->name ?>">
+                      <?php else: ?>
+                        <img class="coinfo__logo" src="<?= get_stylesheet_directory_uri(); ?>/dist/images/logoairon.svg" alt="<?= $speci->name ?>">
+                      <?php endif; ?>
                       <h3 class="coinfo__coname"><?= get_field( 'company_name', 'specialization_'.$speci->term_id ) ?></h3>
                       <p class="coinfo__addr">
                           H-<?= get_field( 'zip', 'specialization_'.$speci->term_id ) ?>, <?= get_field( 'city', 'specialization_'.$speci->term_id ) ?><br>

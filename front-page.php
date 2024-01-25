@@ -1,7 +1,7 @@
 <?php
 $specs = get_terms([
 'taxonomy' => 'specialization',
-'hide_empty' => false,
+'hide_empty' => true,
 ]);
 ?>
 <?php while (have_posts()) : the_post(); ?>

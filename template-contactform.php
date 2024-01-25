@@ -56,11 +56,14 @@
             <label class="smartlabel" for="message_service">
                 <select id="message_service" name="message_service">
                     <option value="Nincs megadva"><?php _e('Specify topic','airon'); ?></option>
-                    <?php while ($the_services->have_posts()) : $the_services->the_post(); ?>
-                    <?php setup_postdata( $post ); ?>
-                    <option value="<?php the_title(); ?>"><?php the_title(); ?></option>
-                    <?php endwhile; ?>
-                    <?php wp_reset_postdata(); ?>
+                    <?php
+                    $specs = get_terms([
+                      'taxonomy' => 'specialization',
+                      'hide_empty' => false,
+                    ]);
+                    foreach ($specs as $key => $speci) : ?>
+                    <option value="<?= $speci->name ?>"><?= $speci->name ?></option>
+                    <?php endforeach; ?>
                 </select>
                 <!-- <span class="smartlabel__text"><?= _e('Service', 'airon') ?></span> -->
             </label>
