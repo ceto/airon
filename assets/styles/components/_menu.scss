@@ -1,18 +1,15 @@
 .menu--main {
-  font-size: .9375rem;
+  font-size: 1.25rem;
   line-height: 1.2;
   text-transform: uppercase;
   font-family: $header-font-family;
   list-style: none;
-  margin:0 1rem 0 0;
+  margin:0 1.5em 0 0;
   padding:0 0 0 0;
   display: flex;
   flex-wrap: nowrap;
-  gap:0 .875em;
+  gap:0 1em;
   white-space: nowrap;
-  @include breakpoint(xxlarge) {
-    font-size: 1.125rem;
-  }
 
   > li {
     position: relative;
@@ -54,13 +51,13 @@
   z-index: 9999;
   display: none;
   position: absolute;
-  left: -.5rem;
+  left: -1rem;
   top: calc(100% - .25rem);
   background-color: $light-gray;
   list-style: none;
   margin: 0;
-  padding:1rem 0 .75rem 0;
-  font-size: inherit;
+  padding:1rem 0 1rem 0;
+  font-size: 1.125rem;
   filter: drop-shadow(0 .75rem 1.5rem rgba(#000,.25));
 
   &:hover {
@@ -69,7 +66,7 @@
 
   &:before {
     position: absolute;
-    left: 1.25rem;
+    left: 1.75rem;
     top: -.333rem;
     content: '';
     display: block;
@@ -88,7 +85,7 @@
     > a {
       display: block;
       color: inherit;
-      padding: .125em 1.5rem .125em .75rem;
+      padding: .125em 2rem .125em 1rem;
       &:before {
           font-weight: $global-weight-bold;
           content:'. ';
@@ -237,13 +234,12 @@
   font-family: $header-font-family;
   text-transform: uppercase;
   font-weight: $global-weight-semibold;
-  margin-bottom: 2rem;
   font-size: 1.125rem;
   > li {
     > a {
         display: block;
         color:inherit;
-        padding:.75em 0;
+        padding:.666em 0;
         &:hover, &:focus {
           text-decoration: none;
           color:#fff;
@@ -256,7 +252,7 @@
 .menu--mobile .sub-menu {
   @extend .menu--mobile;
   list-style: none;
-  margin: -.25em 0 1rem 2rem;
+  margin: -.25em 0 1.25rem 1.75rem;
   font-weight: $global-weight-normal;
   > li {
     > a {

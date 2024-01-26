@@ -12,6 +12,20 @@
       endif;
     ?> -->
 </nav>
+<br><br><br><br>
 <footer class="mobilecanvas__footer">
   <?php dynamic_sidebar('sidebar-offcanvas'); ?>
 </footer>
+<div class="mobilecanvas__langsel">
+      <?php if (get_locale() == 'en_US') : ?>
+      <a href="http://airontrust.hu/">
+        <img src="<?= get_stylesheet_directory_uri(); ?>/dist/images/globe.svg">
+        <span><?= __('HUN','airon'); ?></span>
+      </a>
+      <?php else : ?>
+        <a href="http://airon.hu/">
+          <img src="<?= get_stylesheet_directory_uri(); ?>/dist/images/globe.svg">
+          <span><?= __('ENG','airon'); ?></span>
+        </a>
+      <?php endif; ?>
+</div>

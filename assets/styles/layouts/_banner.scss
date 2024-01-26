@@ -13,15 +13,19 @@
     justify-content: space-between;
     gap: 0;
     padding: 0 0 0 1rem;
+
+    @include breakpoint(large) {
+      min-height: 4.5rem;
+    }
 }
 
 .banner__brand {
   // float:left;
-  margin:0 0 .333rem 0;
+  margin:0 auto .333rem 0;
   display: block;
   overflow: hidden;
-  width: 10.333rem;
-  height: 2.75rem;
+  width: 10.333rem*0.875;
+  height: 2.75rem*0.875;
   // background-color: red;
   // white-space: nowrap;
   // text-indent: 200%;
@@ -42,11 +46,50 @@
 .banner__nav {
 
   display: none;
-  margin-left: auto;
-  @include breakpoint(xlarge) {
+  @include breakpoint(large) {
     display: block;
   }
 }
+
+.banner__langselblock {
+  // background-color: $medium-gray;
+
+  border-left: 1px solid #fff;
+  align-self: stretch;
+  font-family: $header-font-family;
+  font-weight: $global-weight-bold;
+  display: flex;
+  font-size: .875rem;
+  line-height: 1;
+
+  @include breakpoint(medium down) {
+    display: none;
+  }
+  a {
+    padding:.25rem .25em;
+    background-color: $medium-gray;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap:.25em;
+    color: $dark-gray;
+    min-width: 4.5rem;
+  }
+
+  img {
+    width:1.5rem;
+    height: 1.5rem;
+    display: block;
+    opacity: .666;
+  }
+  span {
+    display: block;
+  }
+}
+
 .banner__ctablock {
   // background-color: $medium-gray;
   background-color: $primary-color;
@@ -54,9 +97,9 @@
   align-self: stretch;
   padding:0 0 0 0;
   display: flex;
-  margin-left: auto;
-  @include breakpoint(xlarge) {
-    margin-left: 0;
+  // margin-left: auto;
+  @include breakpoint(large) {
+    // margin-left: 0;
   }
 
 }
@@ -112,7 +155,7 @@
   background-color: $medium-gray;
   border-left: 2px solid #fff;
 
-  @include breakpoint(xlarge) {
+  @include breakpoint(large) {
     display: none;
   }
 }

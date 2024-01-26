@@ -18,9 +18,9 @@
     </a>
     <nav class="banner__nav">
       <?php
-      if (has_nav_menu('secondary_navigation')) :
-        wp_nav_menu(['theme_location' => 'secondary_navigation', 'menu_class' => 'menu--sec']);
-      endif;
+      // if (has_nav_menu('secondary_navigation')) :
+      //   wp_nav_menu(['theme_location' => 'secondary_navigation', 'menu_class' => 'menu--sec']);
+      // endif;
       ?>
       <?php
       if (has_nav_menu('primary_navigation')) :
@@ -28,6 +28,19 @@
       endif;
       ?>
     </nav>
+    <div class="banner__langselblock">
+      <?php if (get_locale() == 'en_US') : ?>
+      <a href="http://airontrust.hu/">
+        <img src="<?= get_stylesheet_directory_uri(); ?>/dist/images/globe.svg">
+        <span><?= __('HUN','airon'); ?></span>
+      </a>
+      <?php else : ?>
+        <a href="http://airon.hu/">
+          <img src="<?= get_stylesheet_directory_uri(); ?>/dist/images/globe.svg">
+          <span><?= __('ENG','airon'); ?></span>
+        </a>
+      <?php endif; ?>
+    </div>
     <div class="banner__ctablock">
       <a href="<?php the_permalink(4990485); ?>" class="banner__cta"><?= __('Ready to <em>get started?</em>','airon'); ?></a>
     </div>
